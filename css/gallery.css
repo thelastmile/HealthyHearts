@@ -1,0 +1,102 @@
+@import url("donor.css");
+
+.heading{
+  background-image: linear-gradient(#E8EBF0, #E5E9EC);
+}
+
+h1{
+  position: relative;
+  font-size: 5em;
+  left: 15%;
+  top: 10px;
+  text-shadow: -2px 1px 9px black;
+  width: 71%;
+  height: 70%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+h3{
+  text-shadow: 1px 1px 4px black;
+  text-align: center;
+  margin-top: 10%;
+}
+
+div.clipPicture{
+  border: 1px solid black;
+  height: 10em;
+  margin: .25em;
+}
+
+video{
+  width: 10em;
+  height: 6em;
+  position: relative;
+  left: -17%;
+}
+
+.picGallery{
+  width: 10em;
+  height: 10em;
+  position: relative;
+  left: -16%;
+  top: -.125em;
+}
+
+#advisory{
+  position: relative;
+  left: -5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+h1#aboutUs{
+    position: relative;
+    font-size: 5em;
+    left: -31%;
+    top: 10px;
+    text-shadow: 2px 3px 5px black;
+    width: 71%;
+    height: 70%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+h1#getInvolved{
+    position: relative;
+    font-size: 5em;
+    left: 23%;
+    top: 10px;
+    text-shadow: 2px 3px 5px black;
+    width: 71%;
+    height: 70%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+h1#becomeSponsor{
+    position: relative;
+    font-size: 5em;
+    left: 32%;
+    top: 10px;
+    text-shadow: 2px 3px 5px black;
+    width: 71%;
+    height: 70%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+.getInvolvedHeading{
+  text-align: center;
+  font-size: 1.75em;
+  text-shadow: 2px 0px 4px black;
+  width: 89%;
+}
+
+.sponsorHeading{
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 2px 1px 4px black;
+  width: 89%;
+}
+
