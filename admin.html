@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html ng-app="healthyApp">
+<head>
+	<title>adminLogin</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<link rel="stylesheet" type="text/css" href="css/healthyHeart.css">
+	
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+</head>
+<body>
+
+	<header class="entry-header">
+		<div class="inner">
+			<div class="col-md-4">
+				<p class="entry-title lg-font black" style="margin-top:0">Healthy Hearts Institute</p>
+			</div>
+		<div class='col-md-8'>
+			<nav>
+				<ul>
+					<li><a class="sm-font black"href="HealthyHeartParallax.html">Home</a></li>
+					<li><a class="sm-font black"href="communityEvent.html">Community Events</a></li>
+					<li><a class="sm-font black"href="admin.html">View Blog</a></li>
+					<li><a class="sm-font black"href="getInvolve.html">Get Involved</a></li>
+					<li><a class="sm-font black donar"href="donor.html">Become a Sponsor</a></li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+	</header>
+
+		<ul class="login">
+			<li class="dropdown">
+				<a href="#" class="name dropdown-toggle white LogInHover" data-toggle="dropdown">Admin Log-in <span class="caret"> <!-- </span> 
+				<span id="userName"></span> -->
+				</a>
+			<ul class="dropdown-menu" role="menu">
+				<li data-toggle="modal" data-target="#loginModal"><a href="#">Log-in</a></li>
+				<!--   <li class="divider"></li>
+				<li id="logout"><a href="#">Log-out</a></li>  -->        
+				</ul>
+			</li>
+		</ul>
+
+<!-- log-in of modal -->
+		<div id="loginModal" class="modal fade">
+			<div class="modal-dialog">
+					<div class="modal-content" style="position: relative;top:16em; left:30em;background-color:#85a1b9">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<button class="modal-title" style="position:relative;left:13em;">Administrator Please Sign-in</button>
+					</div>
+					<div class="modal-body" style="background-color:#85a1b9;">
+						<form role="form">
+							<div class="form-group">
+								<label for="inputName" class="sm-font">Name</label>
+								<input type="text" class="form-control sm-font" id="inputName" placeholder="Enter name">
+							</div>
+							<div class="form-group">
+								<label for="inputPassword1" class="sm-font">Password</label>
+								<input type="password" class="form-control sm-font" id="inputPassword1" placeholder="Password">
+								</div>	 
+								<button type="button" class="btn btn-default" id="loginSubmit" data-dismiss="modal">Submit</button>
+						</form>
+					</div>
+					</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div class="userName"></div>
+			<div class="userContent">
+				<p class='lg-font center white' style="margin-bottom:-1%;"> Community Blog Post </p>
+
+			<div class='border post adjust'>
+				<ul id='blogPost'>
+				<!-- <h4 id="message">This area is reserved for blog</h4> -->
+				</ul>
+			</div>
+			<div class="blogDiv">
+			
+				 <label for="subject" class="md-font white" style="postion: relative;left:-29em "> Blog Subject: </label>
+			    <input class="md-font black" id="subject" placeholder="Subject Title">				
+					
+
+
+				<textarea id='blogEntry' placeholder='Type your entry here' focus></textarea>
+					<input id='blogButton' type='button' value='Post Blog' onClick='blogPost()'>
+				<form method="post" id="fileSelector">
+				<p class="md-font white" style="position:relative; top:2em; left:0;">Upload your picture </p>
+					<input style="position:relative;top:3em" type="file" name="user-pic" id="selectedPic"/> <br/>
+				</form>
+
+			</div>
+			</div>
+		
+	
+<script type="text/javascript" src="js/finalProject.js"></script>
+<script type="text/javascript" src="js/admin.js"></script>
+
+</body>		
+</html>

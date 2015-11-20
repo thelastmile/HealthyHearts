@@ -1,30 +1,41 @@
 
+/*.heading{
+  background-image: linear-gradient(#E8EBF0, #E5E9EC);
+}*/
+@font-face {
+    font-family: SF-Compact-Text-Bold;
+    src: url("../type/SF-Compact-Text-Bold.otf");
+}
+
+div {
+    font-family: SF-Compact-Text-Bold;
+    font-family: SF-Compact-Text-Light;
+    font-family: SF-Compact-Text-Medium;
+}
+
 ul li{
   list-style: none;
+}
+body{
+  background-color: #020202;
 }
 
 .post{
     position: relative;
-    left: 25%;
-    width: 48%;
-    height: 50em;
-    border: 1px solid black;
-    top: 31em;
-    box-shadow: 0px 1px 7px purple;
+    left: 14%;
+    width:68%;
+    height: 55em;
+    top: 2em;
     overflow: auto;
+    background-color: white;
 }
-
+.center{
+  text-align: center;
+}
 #blogPost{
   position: relative;
   left: 0;
 }
-
-.shadow{
-  position: relative;
-  left: 30.5%;
-  border-bottom: 2.5px solid gray;
-  width: 31%;
-} 
 
 .blogDiv{
   position: relative;
@@ -36,39 +47,34 @@ ul li{
 }
 
 #blogEntry{
-    width: 100%;
-    height: 50%;
+    width: 132%;
+    height: 59%;
     position: relative;
-    top: -1em;
+    top: -7em;
+    left:-29em;
+    font-size: 20px;
+   font-family: SF-Compact-Text-Bold;
 }
 
-.name, {
-    position: relative;
-    left: 74%;
-    top: -36px;
-    border: 1px solid black;
-    padding: 1.23em;
-    font-size: 1em;
-    border-radius: 11px;
-    background-color: green;
-    color: white;
-}
 
 .name:hover{
   background-color: red;
 }
 
-.userName{
+.userContent{
   position: relative;
-  left: 41%;
-  top: 74px;
-  width: 50%;
+ /* left: 41%;*/
+  top: 8em;
+  width: 100%;
 }
 
 .greeting{
   position: relative;
   left: 2%;
-  top: -4em;
+  top: 3em;
+  color: white;
+  font-size: 25px;
+  font-family: SF-Compact-Text-Bold;
 }
 
 footer{
@@ -79,11 +85,15 @@ footer{
 .login{
   position: relative;
   left: 75%;
-  top: -3em;
+  top: 8em;
   border: 1px solid black;
   width: 7%;
   padding: 5px;
   border-radius: 5px;
+}
+.LogInHover:hover{
+text-decoration: none;
+background-color: white;
 }
 
 .login:active{
@@ -94,46 +104,63 @@ footer{
   position: relative;
   left: -1.5em;
   top: 1em;
-  margin-bottom: 5px;
-  border: 1px solid gray;
-  padding: 5px;
-  box-shadow: 0px 1px 7px purple;
-  border-radius: 6px;
-  width: 97%;
+  padding: 16px 0 16px;
+  width: 94.5%;
+  border: none;
+  border-bottom: 2px solid gray;
+  border-bottom-width: 50%;
 }
 
-h4{
+/*h4{
   text-shadow: 1px 1px 4px black;
-}
+}*/
 
 #authorPic{
-  width: 3em;
+  width: 7%;
   left: .5%;
 }
 
 #authorName{
-  font-size: 1em;
+  font-size: 1.25em;
   position: relative;
   top: -2em;
   left: 7%;
+  font-family: SF-Compact-Text-Bold;
 }
 
 #fileSelector{
   position: absolute;
-  left: 2%;
-  top: 47%;
+  left: -172%;
+  top: 20%;
   margin: 0px;
 }
-
+.blogBox{
+  background-color: red;
+}
 #blogButton{
+  font-size: 1.25em;
+  font-family: SF-Compact-Text-Bold;
   position: absolute;
-  top: 86%;
-  background-color: rgb(0, 255, 5);
-  border-radius: 1.25em;
+  top: 70%;
+  left: -139%;
+  background-color:#85a1b9;
+  border-radius:.25em;
+  width:8em;
+  color: white;
 }
 
 #datePosted{
-  margin-top: -25px;
+  margin-top: -6px;
+  width: 50%;
+  font-size: .75em;
+  font-family: SF-Compact-Text-Bold;
+}
+
+#topic{
+  font-family: SF-Compact-Text-Bold;
+  font-size: 25px;
+  margin-top: -20px;
+  width: 50%;
 }
 
 h4#message{
@@ -142,18 +169,61 @@ h4#message{
 }
 
 #uploadPic{
-  width: 8em;
+  width: 25%;
   left: 1.5%;
   margin-bottom: 1em;
   border: 1px solid black;
-  box-shadow: 0px 1px 7px purple; 
+  /*box-shadow: 0px 1px 7px purple;*/
+  margin-right: 1%; 
+  color: red;
 }
 
 button{
   margin-top: 5%;
   position: relative;
   left: 48%;
+  font-family: SF-Compact-Text-Bold;
+}
+
+label{
+    position: relative;
+    top: -52%;
+}
+
+#subject{
+  position: relative;
+  top: -52%;
+  left: -29em;
 }
 
 
+.viewBlog{
+  font-size: 1em;
+  position: relative;
+  top: -8em;
+  left: 54%;
+  color: #020202;
+  background-color: white;
+}
+
+.viewBlog:hover{
+  background-color: #020202;
+  color: white;
+}
+
+.showClick{
+  display: none;
+  margin-top: -7%;
+}
+
+.modal-title{
+  position: relative;
+  left: 40%;
+}
+
+
+.userName{
+  color: white;
+  font-size: 2em;
+}
 

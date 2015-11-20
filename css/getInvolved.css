@@ -1,9 +1,10 @@
 
+
 .heading{
   background-image: linear-gradient(#E8EBF0, #E5E9EC);
 }
 
-h1{
+/*h1{
   position: relative;
   font-size: 5em;
   left: 22%;
@@ -13,7 +14,7 @@ h1{
   height: 70%;
   margin-top: 1%;
   margin-bottom: 0%; 
-}
+}*/
 
 /*The below styles apply to the form*/
 

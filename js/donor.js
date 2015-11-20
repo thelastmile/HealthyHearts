@@ -16,7 +16,6 @@ $(document).ready(function(){
 				var donateAmount = $donorAmount.split("").reverse();
 				donateAmount.splice(3,0,",").reverse().join("");
 
-
 				registry($donorName, $donorEmail, $donorOrg, $donorAmount, $donorMessage, registDate);
 
 		});		

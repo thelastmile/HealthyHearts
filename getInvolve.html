@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html ng-app="healthyApp">
+		<head>
+			<title>getInvolved</title>
+			<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
+
+			<link rel="stylesheet" type="text/css" href="css/getInvolved.css">
+			
+			<script type="text/javascript" src="lib/jquery.js"></script>
+			<script type="text/javascript" src="lib/bootstrap.js"></script>	
+			<link rel="stylesheet" type="text/css" href="css/healthyHeart.css">
+		</head>
+
+		<body>
+			
+			<header class="entry-header">
+				<div class="inner">
+					<div class="col-md-4">
+						<h1 class="entry-title lg-font black" style="margin-top:0">Healthy Hearts Institute</h1>
+					</div>
+					<div class='col-md-8'>
+					<nav>
+						<ul>
+							<li><a class="sm-font black"href="HealthyHeartParallax.html">Home</a></li>
+							<li><a class="sm-font black"href="communityEvent.html">Community Events</a></li>
+							<li><a class="sm-font black"href="admin.html">View Blog</a></li>
+							<li><a class="sm-font black"href="getInvolve.html">Get Involved</a></li>
+							<li><a class="sm-font black"href="admin.html">Admin Log-In</a></li>
+							<li><a class="sm-font black donar"href="donor.html">Become a Sponsor</a></li>
+						</ul>
+					</nav>
+					</div>
+				</div>
+			</header>	
+			
+
+			<div class="row topic">
+						 <h1> Learn How To Get Involved </h1>
+			</div>
+
+			<form action="thanks.html" method="post">
+				<label id="donorHeading"> Register To Get Involved </label>
+				  <div>
+				    <label for="name">Name</label>
+				    <input id="name" placeholder="last name, first name">
+				  </div>
+				  <div>
+				    <label for="email">Your E-mail</label>
+				    <input type="email" id="email" placeholder="your@email.com">
+				  </div>
+				  <div>
+				    <label for="city">City</label>
+				    <input type="text" id="city" placeholder="your city">
+				  </div>
+				  <div>
+				    <label for="state">State</label>
+				    <input type="text" id="state" placeholder="your state">
+				  </div>
+				  <div>
+				    <label for="message">Message</label>
+				    <textarea id="message" placeholder="Enter your comments here"></textarea>
+				  </div>
+
+				  <button type="button" id="submit">Get Involved</button>
+			</form>
+
+			<div id="table">
+				<label id="heading"> These are the individuals who want to get involved </label>
+				<table>
+					<thead>
+							<th class="mainHeading">Name</th>
+							<th class="mainHeading">Email</th>
+							<th class="mainHeading">City</th>
+							<th class="mainHeading">State</th>
+							<th class="mainHeading">registered date</th>
+							<th class="mainHeading">comments</th>
+					</thead>
+					<tbody id="donorTable">
+
+
+					</tbody>
+				</table>
+			</div>
+
+			<script type="text/javascript" src="js/getInvolved.js"></script>
+
+		</body>
+		
+</html>

@@ -1,0 +1,66 @@
+
+.body{
+  background: linear-gradient(to bottom, black, white);
+  width: 100%;
+}
+
+.title{
+  
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+}
+
+div.clipPicture{
+  height: 10em;
+  margin: .25em;
+}
+
+video{
+  width: 100%;
+  height: 6em;
+  position: relative;
+  left: -17%;
+}
+
+.picGallery{
+  width: 100%;
+}
+
+p{
+  color: white;
+}
+
+#picPlaceHolder, .placeHolder{
+  width: 76%;
+  left: 19%;
+  font-size: 4em;
+  border-right-width: 28px;
+}
+
+.carousel-indicators li {
+  position: relative;
+  left: 21em;
+  top: -30em;
+  color: blue;
+}
+
+div.video img{
+  position: relative;
+  top: 2em;
+  left: 0;
+}
+
+li{
+  display: inline-block;
+  list-style: none;
+  font-size: 2em;
+}
+
+.col-sm-4{
+  width: 18%;
+}
+
+nav{
+  font-size: 0.5em;
+}

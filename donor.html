@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+		<head>
+			<title>donate</title>
+			<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
+			<link rel="stylesheet" type="text/css" href="css/donor.css">
+			<script type="text/javascript" src="lib/jquery.js"></script>
+			<script type="text/javascript" src="lib/bootstrap.js"></script>	
+				<link rel="stylesheet" type="text/css" href="css/healthyHeart.css">
+		</head>
+
+		<body>
+		
+
+		<header class="entry-header">
+		<div class="inner">
+			<div class="col-md-4">
+				<h1 class="entry-title lg-font black" style="margin-top:0">Healthy Hearts Institute</h1>
+			</div>
+			<div class='col-md-8'>
+			<nav>
+
+				<ul>
+					<li><a class="sm-font black"href="HealthyHeartParallax.html">Home</a></li>
+					<li><a class="sm-font black"href="communityEvent.html">Community Events</a></li>
+					<li><a class="sm-font black"href="admin.html">View Blog</a></li>
+					<li><a class="sm-font black"href="getInvolve.html">Get Involved</a></li>
+					<li><a class="sm-font black"href="admin.html">Admin Log-In</a></li>
+					<li><a class="sm-font black donar"href="donor.html">Become a Sponsor</a></li>
+				</ul>
+			</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class='row'>
+		<p class="x-lg-font black" style="margin-top:0; position:absolute;top:2em;left:7em;">Do You Have The Heart To Help...</p>
+	</div>
+				
+			
+
+			
+
+			<form action="thanks.html" method="post">
+				<label id="donorHeading" class="md-font"> Donation Registration </label>
+				  <div>
+				    <label for="name" >Name</label>
+				    <input id="name" placeholder="Last Name, First Name">
+				  </div>
+				  <div>
+				    <label for="email">Your E-mail</label>
+				    <input type="email" id="email" placeholder="your@email.com">
+				  </div>
+				  <div>
+				    <label for="subject">Donate By</label>
+				    <input type="text" id="organization" placeholder="your organization">
+				  </div>
+				   <div>
+				    <label for="amount">Amount Donate</label>
+				    <input type="text" id="amount" placeholder="       amount donate">
+				  </div>
+				  <div>
+				    <label for="message">Message</label>
+				    <textarea id="message" placeholder="Enter your comments here"></textarea>
+				  </div>
+
+				  <button type="button" id="submit">Donate</button>
+			</form>
+
+			<div id="table">
+				<label id="heading" class="md-font">These are our donors </label>
+				<table>
+					<thead>
+							<th class="mainHeading ">Name</th>
+							<th class="mainHeading">Organization</th>
+							<th class="mainHeading">Contact</th>
+							<th class="mainHeading">Registered Date</th>
+							<th class="mainHeading">Amount Donated</th>
+					</thead>
+					<tbody id="donorTable">
+
+
+					</tbody>
+				</table>
+			</div>
+
+			<script type="text/javascript" src="js/donor.js"></script>
+
+		</body>
+		
+</html>

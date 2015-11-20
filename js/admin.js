@@ -4,7 +4,7 @@
 //	log the user name onto the page
 //
 
-// var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"t.png"}];
+var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"images/chris.png"}];
 
 // var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"t.png"},
 // 									{"userName": "charlie","password": "thao","userPic":"DUP02175.JPG"}	
@@ -24,8 +24,8 @@ $(document).ready(function(e){
 			$userName = $("#inputName").val();
 			$passWord = $("#inputPassword1").val();
 
-			var userName = "lastmile";
-			var passWord = "code7370";
+			// var userName = "lastmile";
+			// var passWord = "code7370";
 
 			for(var i = 0; i < listOfAuth.length; i++)
 			{
@@ -34,13 +34,16 @@ $(document).ready(function(e){
 	
 				if(author.userName === $userName && author.password === $passWord)
 				{
-					$(".homeBackground").remove();
-					$(".linkAdmin").show();
+					// $(".adjust").animate({opacity:0.25,
+					// 											top:"+=350",
+					// 											});
+					$(".adjust").animate({top:"+=350"});
 
+					$(".blogDiv").show();
 
 					 mainUser($userName, $passWord);
 
-					$("div.userName").append("<h3 class='greeting'>Welcome " +$userName+ "</h3>");	
+					$("div.userName").append("<p class='greeting'>Welcome " +$userName+ "</p>");	
 				}
 				else	
 				{
@@ -73,16 +76,16 @@ function mainUser(name, pw){
 			$(".blogDiv").show();
 			localStorage.setItem('user',JSON.stringify(s));
 		}
-		window.location.reload();
+
  };
 
-var uploadPic = function(blog, date) {
+var uploadPic = function(topic, blog, date) {
 	var url = $('input:file').val();	//url = "C:\fakepath\logo.png"
 	var urlArray = url.split("\\");
 	urlPath = "images/" + urlArray[2];
 	path = urlPath;
 
-	blogStorage(blog, date, path);
+	blogStorage(topic, blog, date, path);
 
 }
 
@@ -92,10 +95,11 @@ var uploadPic = function(blog, date) {
 //
 var path;
 function blogPost(){
+	$topic = $("#subject").val();
 	$newText = $("#blogEntry").val();
 	var now = new Date();
 
-	uploadPic($newText, now);
+	uploadPic($topic, $newText, now);
 
 };
 
@@ -104,10 +108,11 @@ function blogPost(){
 //	This function store the blog into local storage
 //
 
-function blogStorage(text,date,path){
+function blogStorage(topic,text,date,path){
 
 		var object={};
 
+		object.subject=topic;
 		object.post=text;
 		object.date=date;
 		object.path=path;
@@ -159,26 +164,32 @@ function showBlogEntries(){
 
 					var li = document.createElement('li');
 					li.className = 'hello';
+					var topic = entries[i].subject;
 					var dateText = entries[i].date;
 					var newText = entries[i].post;
 					var addPic = entries[i].path;
 
-					if(addPic === undefined)
+					if(addPic === "images/undefined")
 					{
-						$("#blogPost").append("<li class='hello'> <img src='" +author.userPic+ "' id='authorPic'><span><h4 id='authorName'> " +author.userName+ "</h4></span><h4 id='datePosted'>Posted:  " +dateText+ "</h4>"+ "\n" +newText+ "</li>");							
+						$("#blogPost").append("<li class='hello'> <img src='" +author.userPic+ "' id='authorPic'><span><h4 id='authorName'> " +author.userName+ "</h4></span><h4 id='topic'>Subject:  " +topic+ "</h4><h4 id='datePosted'>Posted:  " +dateText+ "</h4><button class='viewBlog'>View Blog</button><div class='showClick'>"+ "\n<p class='md-font black'>" +newText+ "</p></li>");							
 					}
 					else
 					{
-						$("#blogPost").append("<li class='hello'> <img src='" +author.userPic+ "' id='authorPic'><span><h4 id='authorName'> " +author.userName+ "</h4></span><h4 id='datePosted'>Posted:  " +dateText+ "</h4>"+ "\n" +newText+ "<br/><img src='" +addPic+ "'id='uploadPic'/></li>");	
+						$("#blogPost").append("<li class='hello '> <img src='" +author.userPic+ "' id='authorPic'><span><h4 id='authorName'> " +author.userName+ "</h4></span><h4 id='topic'>Subject:  " +topic+ "</h4><h4 id='datePosted'>Posted:  " +dateText+ "</h4><button class='viewBlog'>View Blog</button><div class='showClick'><img src='" +addPic+ "'id='uploadPic'/>"+ "\n<p class='md-font black'>" +newText+ "</p></li>");	
 					}
 	 		}
-	 		console.log(path);
  }
 showBlogEntries();
 
-$("uploadPic").click(function(){
-	this.css
-})
-
+$(document).ready(function(){
+	$btn = $(".viewBlog");
+	$btn.on('click',function(e){
+		var t=$(this).next("div");
+		t.show();
+		console.log(t);
+		// $(".showClick").show();
+		// console.log($(this).text());
+	});
+});
 
 

@@ -3,7 +3,7 @@
   background-image: linear-gradient(#E8EBF0, #E5E9EC);
 }
 
-h1{
+/*h1{
   position: relative;
   font-size: 5em;
   left: 32%;
@@ -13,7 +13,7 @@ h1{
   height: 70%;
   margin-top: 1%;
   margin-bottom: 0%; 
-}
+}*/
 
 /*The below styles apply to the form*/
 
@@ -22,6 +22,7 @@ label {
 }
 
 form div {
+  margin-top: 1em;
   margin-bottom: 1.5rem;
 }
 
@@ -68,7 +69,7 @@ button {
 form{
   position: relative;
   left: 15%;
-  top: 3em;
+  top: 15em;
   border: 1px solid black;
   padding: 5px;
   border-radius: 8px;
@@ -76,11 +77,15 @@ form{
 }
 
 label#heading{
+  font-family: SF-Compact-Text-Bold;
   display: block;
   font-size: 2em;
   position: relative;
   left: 22%;
-  text-shadow: 1px 1px 4px black;
+  color: #020202;
+}
+label{
+  
 }
 
 table{
@@ -91,7 +96,7 @@ table{
   position: relative;
   left: 47%;
   width: 42%;
-  top: -42em;
+  top: -30em;
 }
 
 th, td{
@@ -99,6 +104,7 @@ th, td{
 }
 
 th.mainHeading{
+  font-family: SF-Compact-Text-Bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 90%;
@@ -138,8 +144,12 @@ input#amount{
 #donorHeading{
   margin: 0 auto;
   font-size: 2em;
-  border-bottom: 1px solid gray;
-  text-shadow: 1px 1px 4px black;
+  color: #020202;
 }
 
-
+/*table tbody#donorTable{
+  border: 1px solid black;
+  height: 59em;
+  overflow: auto;
+}
+*/
