@@ -1,19 +1,88 @@
 
+body{
+/*  background-color: #424141;*/
+  width: 100%;
+}
+
+/*load new Text*/
+
+@font-face {
+    font-family: SF-Compact-Text-Bold;
+    src: url("../type/SF-Compact-Text-Bold.otf");
+}
+
+div {
+    font-family: SF-Compact-Text-Bold;
+    font-family: SF-Compact-Text-Light;
+    font-family: SF-Compact-Text-Medium;
+}
+
 .heading{
   background-image: linear-gradient(#E8EBF0, #E5E9EC);
 }
 
-/*h1{
-  position: relative;
-  font-size: 5em;
-  left: 32%;
-  top: 10px;
-  text-shadow: 2px 3px 5px black;
-  width: 71%;
-  height: 70%;
-  margin-top: 1%;
-  margin-bottom: 0%; 
-}*/
+.x-lg-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 4em;
+}
+.lg-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size:40px;
+}
+.x-md-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 2.5em;
+}
+.md-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 20px;
+}
+.blogText{
+    font-size: 25px;
+    font-family: SF-Compact-Text-Bold;
+
+}
+.x-sm-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 1.5em;
+}
+.sm-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 1em;
+}
+
+.xx-sm-font{
+    font-size: .75em;
+    font-family: SF-Compact-Text-Bold;
+}
+.ltBlue{
+    color:#82b1ff;
+}
+.mdBlue{
+    color:#448aff;
+}.dkBlue{
+    color:#2979ff;
+}.xDkBlue{
+    color:#2962ff;
+}
+.white{
+    color:white;
+}
+.black{
+    color: #020202;
+} 
+
+.white{
+    color: white;
+}   
+.center{
+    text-align: center;
+}
+
+.submit{
+  position: absolute;
+  left: 50%;
+}
 
 /*The below styles apply to the form*/
 
@@ -59,9 +128,9 @@ button {
   color: #363;
   border-radius: 6px;
   cursor: pointer;
-  position: relative;
-  left: 28%;
-  top: -1em;
+  position: absolute;
+  left: 0.5%;
+  top: 38em;
 }
 
 /*The below styles apply to the display of table*/
@@ -70,10 +139,7 @@ form{
   position: relative;
   left: 15%;
   top: 15em;
-  border: 1px solid black;
   padding: 5px;
-  border-radius: 8px;
-  width: 25%;
 }
 
 label#heading{
@@ -145,6 +211,48 @@ input#amount{
   margin: 0 auto;
   font-size: 2em;
   color: #020202;
+}
+
+#table{
+  display: none;
+  position: absolute;
+  top: 16em;
+}
+
+#viewSponsor{
+  position: absolute;
+  top: 12.5em;
+  left: 114em;
+}
+
+#viewSponsor:hover{
+  background-color: blue;
+  color: red;
+}
+
+#thanksMessage{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 52em;
+    top: 22em;
+}
+
+#hideViewSponsor{
+  display: none;
+  position: absolute;
+  top: 12.5em;
+  left: 114em;
+}
+
+.topic{
+    position: absolute;
+    top: 2em;
+    left: 7em;
+}
+
+.form-control{
+  width: 50%;
 }
 
 /*table tbody#donorTable{

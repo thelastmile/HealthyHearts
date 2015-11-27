@@ -1,10 +1,89 @@
+/*load new Text*/
 
-/*.heading{
-  background-image: linear-gradient(#E8EBF0, #E5E9EC);
-}*/
 @font-face {
     font-family: SF-Compact-Text-Bold;
     src: url("../type/SF-Compact-Text-Bold.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Light;
+    src: url("../type/SF-Compact-Text-Light.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Medium;
+    src: url("../type/SF-Compact-Text-Medium.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Heavy;
+    src: url("../type/SF-Compact-Text-Heavy.otf");
+}
+div {
+    font-family: SF-Compact-Text-Bold;
+    font-family: SF-Compact-Text-Light;
+    font-family: SF-Compact-Text-Medium;
+    font-family: SF-Compact-Text-Heavy;
+}
+
+
+
+
+/*   Fixed Header
+*/.entry-header .inner {
+    text-align: left;
+    margin-left: 3em;
+    width: 100%;
+}
+.entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999}
+    
+/*global styling 
+*/
+
+.lg-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size:40px;
+}
+
+.md-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 20px;
+}
+.blogText{
+    font-size: 25px;
+    font-family: SF-Compact-Text-Bold;
+
+}
+.x-sm-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 1.5em;
+}
+.sm-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 1em;
+}
+
+.xx-sm-font{
+    font-size: .75em;
+    font-family: SF-Compact-Text-Bold;
+}
+.white{
+    color:white;
+}
+.black{
+    color: #424141;
+}
+.red{
+    color: #e84748;
+}
+.purple{
+    color: #4f5670;
+} 
+.blue{
+    color:#28b6ed;
+}
+.grey{
+    color:424141;
+}   
+.center{
+    text-align: center;
 }
 
 div {
@@ -13,20 +92,20 @@ div {
     font-family: SF-Compact-Text-Medium;
 }
 
+a{
+  color: white;
+}
+
 ul li{
   list-style: none;
-}
-body{
-  background-color: #020202;
 }
 
 .post{
     position: relative;
-    left: 14%;
-    width:68%;
-    height: 55em;
-    top: 2em;
-    overflow: auto;
+    left: 0;
+    width: 100%;
+    height: 100;
+    top: -11em;
     background-color: white;
 }
 .center{
@@ -35,6 +114,8 @@ body{
 #blogPost{
   position: relative;
   left: 0;
+  width: 100%;
+  top: -9em;
 }
 
 .blogDiv{
@@ -49,17 +130,17 @@ body{
 #blogEntry{
     width: 132%;
     height: 59%;
-    position: relative;
-    top: -7em;
-    left:-29em;
+    /*position: relative;
+    top: -7em;*/
+    /*left:-29em;*/
     font-size: 20px;
    font-family: SF-Compact-Text-Bold;
 }
 
 
-.name:hover{
+/*.name:hover{
   background-color: red;
-}
+}*/
 
 .userContent{
   position: relative;
@@ -68,14 +149,6 @@ body{
   width: 100%;
 }
 
-.greeting{
-  position: relative;
-  left: 2%;
-  top: 3em;
-  color: white;
-  font-size: 25px;
-  font-family: SF-Compact-Text-Bold;
-}
 
 footer{
   position: relative;
@@ -91,10 +164,10 @@ footer{
   padding: 5px;
   border-radius: 5px;
 }
-.LogInHover:hover{
+/*.LogInHover:hover{
 text-decoration: none;
 background-color: white;
-}
+}*/
 
 .login:active{
   background-color: gray;
@@ -102,7 +175,7 @@ background-color: white;
 
 .hello{
   position: relative;
-  left: -1.5em;
+  left: 1.5em;
   top: 1em;
   padding: 16px 0 16px;
   width: 94.5%;
@@ -129,24 +202,18 @@ background-color: white;
 }
 
 #fileSelector{
-  position: absolute;
+ /* position: absolute;
   left: -172%;
   top: 20%;
-  margin: 0px;
+  ma*/rgin: 0px;
 }
 .blogBox{
   background-color: red;
 }
 #blogButton{
-  font-size: 1.25em;
-  font-family: SF-Compact-Text-Bold;
   position: absolute;
-  top: 70%;
-  left: -139%;
-  background-color:#85a1b9;
-  border-radius:.25em;
-  width:8em;
-  color: white;
+  left: 21%
+  top:92%;
 }
 
 #datePosted{
@@ -190,20 +257,20 @@ label{
     top: -52%;
 }
 
-#subject{
+/*#subject{
   position: relative;
-  top: -52%;
-  left: -29em;
-}
+  top: -52%;*/
+  /*left: -29em;*/
+/*}*/
 
 
 .viewBlog{
-  font-size: 1em;
-  position: relative;
-  top: -8em;
-  left: 54%;
-  color: #020202;
-  background-color: white;
+    font-size: 1em;
+    position: relative;
+    top: -12.5em;
+    left: 14%;
+    color: #020202;
+    background-color: white;
 }
 
 .viewBlog:hover{
@@ -227,3 +294,21 @@ label{
   font-size: 2em;
 }
 
+img#mainPic{
+    width: 100%;
+    position: relative;
+    top: -2em;
+}
+
+#greeting{
+    position: absolute;
+    left: 38%;
+    text-align: center;
+    top: -15em; 
+}
+.blogDiv{
+  width: 25%;
+  position: absolute;
+  top:-74em;
+  left: 3%;
+}

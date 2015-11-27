@@ -1,6 +1,6 @@
 
 .body{
-  background: linear-gradient(to bottom, black, white);
+  background-color: #424141;
   width: 100%;
 }
 
@@ -16,15 +16,48 @@ div.clipPicture{
   margin: .25em;
 }
 
-video{
-  width: 100%;
-  height: 6em;
+#videoP{
+    width: 106%;
+    height: 7em;
+    position: relative;
+    left: -3%;
+    top: 0.25em;
+/*    display: none;*/
+}
+
+#video1{
+    width: 60em;
+    height: 30em;
+    position: relative;
+    left: 53%;
+    top: 2.25em;
+    display: none;
+}
+
+#video2{
+  width: 60em;
+  height: 30em;
   position: relative;
-  left: -17%;
+  left: -70%;
+  top: 2.25em;
+  display: none;
+}
+
+#video3{
+  width: 60em;
+  height: 30em;
+  position: relative;
+  left: -180%;
+  top: 2.25em;
+  display: none;
 }
 
 .picGallery{
-  width: 100%;
+    width: 99%;
+    position: absolute;
+    top: 21em;
+    padding: 5px;
+    left: 95%;
 }
 
 p{
@@ -64,3 +97,74 @@ li{
 nav{
   font-size: 0.5em;
 }
+
+.placeHolder{
+/*    border: 2px solid black;*/
+    position: absolute;
+    left: 9%;
+    font-size: 5.05em;
+}
+
+#message1{
+    color: white;
+    position: absolute;
+    top: -3em;
+    left: 17em;
+    width: 95%;
+}
+
+.format{
+    margin-top: 5em;
+    width: 100%;
+/*    background: linear-gradient(to top, white, black);*/
+    margin-left: -40%;
+}
+
+.format3{
+      margin-top: 5em;
+/*      background: linear-gradient(to top, white, black);*/
+}
+
+img{
+  position: relative;
+  left: 17em;
+}
+
+.carousel-indicators .active{
+    position: relative;
+    left: 15em;
+    top: -22em;
+    color: blue;
+  
+}
+
+.carousel-indicators li{
+    position: relative;
+    left: 15em;
+    top: -22em;
+    color: blue;
+  
+}
+
+.carousel-control{
+  right:150%;
+}
+
+.videos{
+/*    background: radial-gradient( white, black);*/
+    width: 96.5%;
+    height: 72em;
+    position: relative;
+    top: -2em;
+    left: 3em;;
+}
+
+.md-font{
+  text-align: center;
+}
+
+.format1{
+    padding: 3em;
+    margin: -2em;
+}
+

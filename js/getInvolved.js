@@ -4,16 +4,21 @@ $(document).ready(function(){
 
 		$("#submit").click(function(){
 
-				$getInvolvedName = $("#name").val();
+				$getInvolvedFirstName = $("#firstName").val();
+				$getInvolvedLastName = $("#lastName").val();
 				$getInvolvedEmail = $("#email").val();
 				$getInvolvedCity = $("#city").val();
 				$getInvolvedState = $("#state").val();
 				$getInvolvedMessage = $("#message").val();
 
+				var fullName = $getInvolvedLastName +', '+ $getInvolvedFirstName;
+
+				thankYouMessage(fullName);
+
 				var now = new Date();
 				var getInvolvedDate = now.toDateString(); 
 
-				registry($getInvolvedName, $getInvolvedEmail, $getInvolvedCity, $getInvolvedState, $getInvolvedMessage, getInvolvedDate);
+				registry(fullName, $getInvolvedEmail, $getInvolvedCity, $getInvolvedState, $getInvolvedMessage, getInvolvedDate);
 
 		});		
 
@@ -60,7 +65,25 @@ function getInvolvedList(){
 		var registerDate = involvedList[i].registerDate;
 		var message = involvedList[i].message;
 
-		$("#donorTable").append("<tr><th>" +name+ "</th><td>" +email+ "</td><td>" +city+ "</td><td>" +state+ "</td><td>" +registerDate+ "</td><td>" +message+ "</td></tr>");
+		$("#getInvolveTable").append("<tr><th>" +name+ "</th><td>" +email+ "</td><td>" +city+ "</td><td>" +state+ "</td><td>" +registerDate+ "</td><td>" +message+ "</td></tr>");
 	}
 };
 getInvolvedList();
+
+function thankYouMessage(name){
+	// $("#thanksMessage").append("<p>Thank you, <h3>" +name+ "</h3> for your donation and support</p>");
+		alert("Thank you " +name+ " for registering with Healthy Heart Institute.\n\n Any programs you wish to participate or be apart of, be sure to stated in the 'registry form' message field. You will be notify through the contact information you provided.\n");
+
+};
+
+$("#viewRegistry").click(function(){
+	$("#table").show();
+	$("#hideViewRegistry").show();
+	$("#viewRegistry").hide();
+});
+
+$("#hideViewRegistry").click(function(){
+	$("#table").hide();
+	$("#hideViewRegistry").hide();
+	$("#viewRegistry").show();
+})

@@ -1,0 +1,321 @@
+/*load new Text*/
+
+@font-face {
+    font-family: SF-Compact-Text-Bold;
+    src: url("../type/SF-Compact-Text-Bold.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Light;
+    src: url("../type/SF-Compact-Text-Light.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Medium;
+    src: url("../type/SF-Compact-Text-Medium.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Heavy;
+    src: url("../type/SF-Compact-Text-Heavy.otf");
+}
+div {
+    font-family: SF-Compact-Text-Bold;
+    font-family: SF-Compact-Text-Light;
+    font-family: SF-Compact-Text-Medium;
+    font-family: SF-Compact-Text-Heavy;
+}
+
+
+
+/*   Fixed Header
+*/.entry-header .inner {
+    text-align: left;
+    margin-left: 3em;
+    width: 100%;
+}
+.entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999}
+    
+/*global styling 
+*/
+
+
+.lg-font{
+    font-family: SF-Compact-Text-Light;
+    font-size:40px;
+    line-height: 48px;
+}
+
+.md-font{
+    font-family: SF-Compact-Text-Medium;
+    font-size: 25px;
+    line-height: 30px;
+}
+.btn-font{
+    font-family: SF-Compact-Text-Heavy;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #e84748;
+    color: white;
+    margin-top: 3em;
+    width: 12em;
+    height: 3em;
+}
+.btn-font:hover{
+    transform: scale(1.25);
+}
+.blogText{
+    font-size: 25px;
+    font-family: SF-Compact-Text-Bold;
+
+}
+
+.sm-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 1em;
+}
+.
+.white{
+    color:white;
+}
+.black{
+    color: #424141;
+}
+.blk{
+    color:black;
+}
+.red{
+    color: #e84748;
+}
+.purple{
+    color: #4f5670;
+} 
+.blue{
+    color:#28b6ed;
+}
+.grey{
+    color:424141;
+}
+
+.white{
+    color: white;
+}   
+.center{
+    text-align: center;
+}
+
+.col-3{
+    width:31%;
+    display: inline-block;
+    padding: 1em;
+}
+.col-2{
+    width: 47%;
+    display: inline-block;
+    padding: 1em;
+}
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hsContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+/*
+Header Styling
+*/
+.entry-header{
+     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0));
+ }
+.inner{
+    width: 100%;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li{
+    display: inline;
+}
+nav a{
+    display: inline-block;
+    width: 13em;
+    padding: .5em;
+    text-align: center;
+}
+
+nav a:hover{
+    color:  #e84748;
+    text-decoration: none;
+    transform: scale(1.5);
+}
+.donar:hover{
+    color: red;
+    text-decoration: none;
+    background-color: #28b6ed;
+    transform: scale(1.25);
+}
+.donar{
+    background-color: white;
+    border-radius: 2em;
+}
+
+/*Individual Slide Styling Home page*/
+/*Slide-1
+*/#slide-1 .bcg {
+   
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/plantingPage.jpg) no-repeat fixed center / cover;
+}
+#slide-1 .hsContent {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    color: #FF4946;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background: none; background-color: #010101; height: 20em; text-align: center}
+
+#slide-2 .hsContainer {
+  width: 100%;
+}
+#slide-2 img{
+    width: 50%;
+}
+
+#slide-2 .col-3{
+    vertical-align: top;
+    padding: 2em;
+    margin:0;
+}
+
+
+
+/* Slide 3 */
+#slide-4 .bcg {background-image:url('../images/oceanYoga.jpg')}
+
+.stressRow{
+    position: relative;
+    top: 50%;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.learnMore{
+    text-align: center;
+}
+
+/* Slide 6 */
+
+#slide-6 .bcg { 
+
+    background-image:url('../images/newHome.jpg')
+
+}
+.strengthRow{
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+
+}
+
+ /* Slide 7 */
+#slide-7 .bcg {background-image:url('../images/apples.jpg')}
+
+.col-2{
+    vertical-align: top;
+    width: 47%;
+    display: inline-block;
+}
+
+.info{
+    margin-left: 34em;
+    margin-top: 6em;
+}
+
+#slide-7 img{
+    width: 85%;
+ }
+ #slide-7 .col-2 img{
+    margin-top: 15em;
+ }
+
+
+/* Slide 8 */
+#slide-8 .bcg {background-image:url('../images/bg.jpg')}
+
+.col-4{
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+.col-8{
+    vertical-align: top;
+    width: 60%;
+    display: inline-block;
+}
+
+.info{
+    margin-left: 34em;
+    margin-top: 6em;
+}
+
+#slide-8 img{
+    /*width: 60%;*/
+ }
+ #slide-8 .col-2 img{
+    margin-top: 15em;
+ }
+
+/* Slide 9 */
+#slide-9 .bcg {background: none; background-color: #010101; height: 20em; text-align: center}
+
+#slide-9 .hsContainer {
+  width: 100%;
+}
+#slide-9 img{
+    width: 80%;
+}
+
+#slide-9 .col-3{
+    vertical-align: top;
+    padding: 2em;
+    margin:0;
+}
+.advisor{
+        position: relative;
+    top: -6em;
+}
+/*
+.format{
+    margin-top: 3em;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+.format1{
+    margin-top: 3em;
+    background-color: orangered;
+    color: white;
+    border: none;
+    position: relative;
+    left: 8em;
+}
+
+.format1:hover,.format:hover{
+    color: blue;
+    transform: scale(1.5);
+
+}*/

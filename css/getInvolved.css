@@ -1,20 +1,33 @@
+/*load new Text*/
 
+@font-face {
+    font-family: SF-Compact-Text-Bold;
+    src: url("../type/SF-Compact-Text-Bold.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Light;
+    src: url("../type/SF-Compact-Text-Light.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Medium;
+    src: url("../type/SF-Compact-Text-Medium.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Heavy;
+    src: url("../type/SF-Compact-Text-Heavy.otf");
+}
+div {
+    font-family: SF-Compact-Text-Bold;
+    font-family: SF-Compact-Text-Light;
+    font-family: SF-Compact-Text-Medium;
+    font-family: SF-Compact-Text-Heavy;
+}
 
 .heading{
   background-image: linear-gradient(#E8EBF0, #E5E9EC);
 }
 
-/*h1{
-  position: relative;
-  font-size: 5em;
-  left: 22%;
-  top: 10px;
-  text-shadow: 2px 3px 5px black;
-  width: 71%;
-  height: 70%;
-  margin-top: 1%;
-  margin-bottom: 0%; 
-}*/
+
 
 /*The below styles apply to the form*/
 
@@ -44,21 +57,37 @@ textarea {
   background-color: #e2e2e2;
   border-radius: 6px;
   font-size: 1.25em;
+  margin-left: 1em;
+  width: 91%;
 }
 
 input:focus,
 textarea:focus {
   background-color: #fff;
 }
+.btn-font{
+    font-family: SF-Compact-Text-Heavy;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #e84748;
+    color: white;
+    margin-top: 3em;
+    width: 12em;
+    height: 3em;
+
+}
+.btn-font:hover{
+    transform: scale(1.25);
+}
 
 button {
-  font-size: 1.125rem;
+/*  font-size: 1.125rem;
   padding: 0.5em 0.75em;
   background-color: #0f0;
   border: 3px solid #3c3;
   color: #363;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: pointer;*/
   position: relative;
   left: 28%;
   top: -1em;
@@ -67,22 +96,26 @@ button {
 /*The below styles apply to the display of table*/
 
 form{
-  position: relative;
-  left: 15%;
-  top: 3em;
-  border: 1px solid black;
-  padding: 5px;
-  border-radius: 8px;
-  width: 25%;
+  /*position: relative;
+  left: 15%;*/
+  background-color: #4f5670;
+  
+  /*border: 1px solid black;*/
+  /*padding: 5px;*/
+  /*border-radius: 8px;*/
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+form label {
+  margin-left: 1em;
+  color: white;
+}
+form input{
+  margin-left: 1em;
+  color: #4f5670;
 }
 
-label#heading{
-  display: block;
-  font-size: 2em;
-  position: relative;
-  left: -7%;
-  text-shadow: 1px 1px 4px black;
-}
 
 table{
   width: 600px;
@@ -91,10 +124,10 @@ table{
 }
 
 #table{
-  position: relative;
-  left: 47%;
-  width: 43%;
-  top: -41em;
+  /*position: relative;
+  left: 10%;*/
+  width: 40%;
+ /* top: -41em;*/
 }
 
 th, td{
@@ -111,7 +144,8 @@ th.mainHeading{
 }
 
 tr:nth-child(2n){
-  background-color: #c3e6e5;
+  background-color: #4f5670;
+  color: white;
 }
 
 /*tr.even{
@@ -141,11 +175,32 @@ input#amount{
   text-align: right;
 }
 
-#donorHeading{
-  margin: 0 auto;
-  font-size: 2em;
-  border-bottom: 1px solid gray;
-  text-shadow: 1px 1px 4px black;
+#table{
+  display: none;
 }
 
+#viewRegistry{
+  position: absolute;
+  top: 11em;
+  
+}
 
+#viewSponsor:hover{
+  background-color: blue;
+  color: red;
+}
+
+#thanksMessage{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 52em;
+    top: 22em;
+}
+
+#hideViewRegistry{
+  display: none;
+  position: absolute;
+  top: -6em;
+  left: 18em;
+}
