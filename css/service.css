@@ -1,0 +1,172 @@
+/*load new Text*/
+
+@font-face {
+    font-family: SF-Compact-Text-Bold;
+    src: url("../type/SF-Compact-Text-Bold.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Light;
+    src: url("../type/SF-Compact-Text-Light.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Medium;
+    src: url("../type/SF-Compact-Text-Medium.otf");
+}
+@font-face {
+    font-family: SF-Compact-Text-Heavy;
+    src: url("../type/SF-Compact-Text-Heavy.otf");
+}
+div {
+    font-family: SF-Compact-Text-Bold;
+    font-family: SF-Compact-Text-Light;
+    font-family: SF-Compact-Text-Medium;
+    font-family: SF-Compact-Text-Heavy;
+}
+
+/*global styling 
+*/
+.lg-font{
+    font-family: SF-Compact-Text-Light;
+    font-size:40px;
+    line-height: 48px;
+}
+
+.md-font{
+    font-family: SF-Compact-Text-Medium;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.sm-font{ 
+    font-family:SF-Compact-Text-Bold; ;
+    font-size: 14px;
+}
+.x-sm-font{ 
+    font-family:SF-Compact-Text-Bold; ;
+    font-size: 15px;
+}
+.white{
+    color:white;
+}
+.black{
+    color: #424141;
+}
+.blk{
+    color:black;
+}
+.red{
+    color: #e84748;
+}
+.purple{
+    color: #4f5670;
+} 
+.blue{
+    color:#28b6ed;
+}
+.grey{
+    color:424141;
+}
+
+.white{
+    color: white;
+}   
+.center{
+    text-align: center;
+}
+
+/*Header Styling amd navbar*/
+.entry-header{
+     background: linear-gradient(rgba(0,0,0,.8), rgba(101,101,101,.5)); 
+ }
+
+.inner{
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li{
+    display: inline;
+}
+nav a{
+    display: inline-block;
+    width: 13em;
+    padding: .5em;
+    text-align: center;
+}
+
+nav a:hover{
+    color:  #e84748;
+    text-decoration: none;
+
+}
+.donar:hover{
+    color: red;
+    text-decoration: none;
+    background-color: #28b6ed;
+    transform: scale(1.5);
+}
+.donar{
+    background-color: white;
+    border-radius: 2em;
+}
+
+/*Stress Management section*/
+.yogaBackground{
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/yogaGirl.jpg) no-repeat fixed center / cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25em;
+	min-height: 45em;
+}
+.stressTitle{
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+	position:relative;
+	top: 44%;
+	color: white;
+}
+.classInfo{
+	width: 40%;
+	display: inline-block;}
+
+
+/*nutrition section*/
+.nutritionBackground{
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/largeNutrition.jpg) no-repeat fixed center / cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25em;
+	min-height: 45em;
+}
+
+/*Strength section*/
+.strengthBackground{
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/fitMan.jpg) no-repeat fixed center / cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25em;
+	min-height: 45em;
+}
+
+/*standard service size*/
+.stdRow{
+	margin-left: auto;
+	width:100%;
+}
+.text{
+	margin: .5em;
+	vertical-align: top;
+	display: inline-block;
+	/*width: 47%;*/
+	box-shadow: 6px 6px 6px #424141;
+	min-height: 17em;
+}
+
+

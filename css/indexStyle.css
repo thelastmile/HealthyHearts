@@ -31,11 +31,12 @@ div {
     margin-left: 3em;
     width: 100%;
 }
-.entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999}
+.entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999;
+
+ }
     
 /*global styling 
 */
-
 
 .lg-font{
     font-family: SF-Compact-Text-Light;
@@ -48,6 +49,16 @@ div {
     font-size: 25px;
     line-height: 30px;
 }
+
+.sm-font{ 
+    font-family: SF-Compact-Text-Bold;
+    font-size: 20px;
+}
+.icon-font{
+     font-family: SF-Compact-Text-Medium;
+    font-size: 17px;
+
+}
 .btn-font{
     font-family: SF-Compact-Text-Heavy;
     font-size: 20px;
@@ -57,6 +68,7 @@ div {
     margin-top: 3em;
     width: 12em;
     height: 3em;
+    border: none;
 }
 .btn-font:hover{
     transform: scale(1.25);
@@ -127,10 +139,11 @@ div {
     position: relative;
 }
 /*
-Header Styling
+Header Styling nad nav bar
 */
 .entry-header{
-     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0));
+     background: linear-gradient(rgba(0,0,0,.8), rgba(101,101,101,.5));
+     /*background:  rgba(101,101,101,.5);*/
  }
 .inner{
     width: 100%;
@@ -168,9 +181,19 @@ nav a:hover{
     border-radius: 2em;
 }
 
+
 /*Individual Slide Styling Home page*/
 /*Slide-1
-*/#slide-1 .bcg {
+
+}
+*/
+.homeTitle{
+  margin-top: 3em;
+  width: 47%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#slide-1 .bcg {
    
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/plantingPage.jpg) no-repeat fixed center / cover;
 }
@@ -200,7 +223,7 @@ nav a:hover{
 
 
 /* Slide 3 */
-#slide-4 .bcg {background-image:url('../images/oceanYoga.jpg')}
+#slide-4 .bcg {background-image:url('../images/yogaSunset1.jpeg')}
 
 .stressRow{
     position: relative;
@@ -211,6 +234,11 @@ nav a:hover{
 }
 .learnMore{
     text-align: center;
+}
+
+.iconTitle{
+    font-weight: bold;
+    color: #4f5670;
 }
 
 /* Slide 6 */

@@ -27,7 +27,69 @@ div {
   background-image: linear-gradient(#E8EBF0, #E5E9EC);
 }
 
+.lg-font{
+    font-family: SF-Compact-Text-Light;
+    font-size:40px;
+    line-height: 48px;
+}
 
+.md-font{
+    font-family: SF-Compact-Text-Medium;
+    font-size: 25px;
+    line-height: 30px;
+}
+.btn-font{
+    font-family: SF-Compact-Text-Heavy;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #e84748;
+    color: white;
+    margin-top: 3em;
+    width: 12em;
+    height: 3em;
+}
+.btn-font:hover{
+    transform: scale(1.25);
+}
+.blogText{
+    font-size: 25px;
+    font-family: SF-Compact-Text-Bold;
+
+}
+
+.sm-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 1em;
+}
+.
+.white{
+    color:white;
+}
+.black{
+    color: #424141;
+}
+.blk{
+    color:black;
+}
+.red{
+    color: #e84748;
+}
+.purple{
+    color: #4f5670;
+} 
+.blue{
+    color:#28b6ed;
+}
+.grey{
+    color:424141;
+}
+
+.white{
+    color: white;
+}   
+.center{
+    text-align: center;
+}
 
 /*The below styles apply to the form*/
 
@@ -47,7 +109,7 @@ textarea {
 }
 
 textarea {
-  height: 10em;
+  height: 8em;
 }
 
 input,
@@ -80,32 +142,16 @@ textarea:focus {
     transform: scale(1.25);
 }
 
-button {
-/*  font-size: 1.125rem;
-  padding: 0.5em 0.75em;
-  background-color: #0f0;
-  border: 3px solid #3c3;
-  color: #363;
-  border-radius: 6px;
-  cursor: pointer;*/
-  position: relative;
-  left: 28%;
-  top: -1em;
-}
+
 
 /*The below styles apply to the display of table*/
 
 form{
-  /*position: relative;
-  left: 15%;*/
   background-color: #4f5670;
-  
-  /*border: 1px solid black;*/
-  /*padding: 5px;*/
-  /*border-radius: 8px;*/
-  width: 70%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 7px 7px 7px #424141;
 }
 form label {
   margin-left: 1em;
@@ -116,18 +162,28 @@ form input{
   color: #4f5670;
 }
 
-
 table{
   width: 600px;
-  position: relative;
-  left: -2%;
+  position: absolute;
+  left: 32%;
+  margin-right: auto;
+  margin-left: auto;
+  top: 43em;
 }
 
-#table{
-  /*position: relative;
-  left: 10%;*/
+label#heading{
+  width: 600px;
+  position: absolute;
+  left: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  top: 34em;
+}
+
+#registryTable{
+  display: none;
   width: 40%;
- /* top: -41em;*/
+
 }
 
 th, td{
@@ -135,22 +191,18 @@ th, td{
 }
 
 th.mainHeading{
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 90%;
-    border-top: 1px solid #999;
-    border-bottom: 2px solid #111111;
-    text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-top: 1px solid #999;
+  border-bottom: 2px solid #111111;
+  text-align: left;
 }
 
 tr:nth-child(2n){
   background-color: #4f5670;
   color: white;
 }
-
-/*tr.even{
-  background-color: #c3e6e5;
-}*/
 
 tr:hover{
   background-color: #96B9F4;
@@ -164,7 +216,6 @@ td{
   background-image: url("../images/dollarSign.png");
   background-position: left;
   background-repeat: no-repeat;
-
 }
 
 input#amount{
@@ -175,13 +226,9 @@ input#amount{
   text-align: right;
 }
 
-#table{
-  display: none;
-}
-
 #viewRegistry{
-  position: absolute;
-  top: 11em;
+  margin-right: auto;
+  margin-left: auto;
   
 }
 
@@ -190,17 +237,26 @@ input#amount{
   color: red;
 }
 
+
 #thanksMessage{
     width: 50%;
-    height: 50%;
-    position: absolute;
-    left: 52em;
-    top: 22em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    display: none;
+}
+.thankYou{
+  width: 100%;
+}
+
+#thankYouSign{
+  width: 50%;
 }
 
 #hideViewRegistry{
   display: none;
-  position: absolute;
-  top: -6em;
-  left: 18em;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+

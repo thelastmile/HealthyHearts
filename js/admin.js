@@ -4,7 +4,7 @@
 //	log the user name onto the page
 //
 
-var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"images/chris.png"}];
+var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"images/Chris.png"}];
 
 // var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"t.png"},
 // 									{"userName": "charlie","password": "thao","userPic":"DUP02175.JPG"}	
@@ -27,6 +27,8 @@ $(document).ready(function(e){
 			// var userName = "lastmile";
 			// var passWord = "code7370";
 
+			$("#adminName").html($userName);
+
 			for(var i = 0; i < listOfAuth.length; i++)
 			{
 				var author = listOfAuth[i];
@@ -34,9 +36,6 @@ $(document).ready(function(e){
 	
 				if(author.userName === $userName && author.password === $passWord)
 				{
-					// $(".adjust").animate({opacity:0.25,
-					// 											top:"+=350",
-					// 											});
 					$(".adjust").animate({top:"+=350"});
 
 					$(".blogDiv").show();
@@ -186,9 +185,6 @@ $(document).ready(function(){
 	$btn.on('click',function(e){
 		var t=$(this).next("div");
 		t.show();
-		console.log(t);
-		// $(".showClick").show();
-		// console.log($(this).text());
 	});
 });
 

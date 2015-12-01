@@ -4,99 +4,100 @@
 		<head>
 			<title>donate</title>
 			<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
-			<link rel="stylesheet" type="text/css" href="css/donor.css">
 			<script type="text/javascript" src="lib/jquery.js"></script>
 			<script type="text/javascript" src="lib/bootstrap.js"></script>	
-				<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+			<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+			<link rel="stylesheet" type="text/css" href="css/donor.css">
 		</head>
 
 		<body>
 		
-	<header class="entry-header">
-		<div class="inner">
-			<div class="col-md-4">
-				<h1 class="entry-title lg-font white" style="margin-top:0">Healthy Hearts Institute</h1>
-			</div>
-			<div class='col-md-8'>
-			<nav>
-
-				<ul>
-					<li><a class="sm-font white"href="index.html">HOME</a></li>
-					<li><a class="sm-font white"href="admin.html">BLOG</a></li>
-					<li><a class="sm-font white"href="communityEvent.html">EVENTS</a></li>
-					<li><a class="sm-font white"href="getInvolve.html">GET INVOLVED</a></li>
-					<li><a class="sm-font black donar"href="donor.html">SPONSER</a></li>
-				</ul>
-			</nav>
-			</div>
-		</div>
-	</header>
-
-	<div class="container">
-
+				<header class="entry-header">
+					<div class="inner">
+							<div class="col-md-4">
+								<a href="index.html"><img src="images/HHI_logo_New.png" style="width:26em;"></a> 
+							</div>
+							<div class='col-md-8'  style="margin-top:1.5em">
+									<nav>
+										<ul>
+											<li><a class="sm-font white"href="index.html">HOME</a></li>
+											<li><a class="sm-font white"href="admin.html">BLOG</a></li>
+											<li><a class="sm-font white"href="communityEvent.html">EVENTS</a></li>
+											<li><a class="sm-font white"href="getInvolve.html">GET INVOLVED</a></li>
+											<li><a class="sm-font black donar"href="donor.html">SPONSOR</a></li>
+										</ul>
+									</nav>
+							</div>	<!-- end of class "col-md-8" -->
+					</div>	<!-- end of class "inner" -->
+				</header>	<!-- end of class "entry-header" -->
+	
 				<div class='row'>
-					<p class="x-lg-font black topic">Do You Have The Heart To Help...</p>
-					<button id="viewSponsor">View Donation</button>
-					<button id="hideViewSponsor">Hide View Donation</button>
-				</div>	
+					<p class="lg-font center black"  style="margin-top:4em; margin-bottom:.5em;" >Do You Have The Heart To Help...</p>
+				</div>	<!-- end of class "row" -->
+				
+				<div class="row" id="donorForm">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<form action="thanks.html" method="post" role="form">
+								<label for="topicHeading" class="md-font center white"> Donate Now </label>
+								  <div class="form-group">
+								    <label for="name" >First Name</label>
+								    <input id="firstName" class="form-control" placeholder="First Name">
+								  </div>
+								  <div class="form-group">
+								    <label for="name" >Last Name</label>
+								    <input id="lastName" class="form-control" placeholder="Last Name">
+								  </div>
+								  <div class="form-group">
+								    <label for="email">Your E-mail</label>
+								    <input type="email" id="email" class="form-control" placeholder="your@email.com">
+								  </div>
+								  <div class="form-group">
+								    <label for="subject">Donate By</label>
+								    <input type="text" id="organization" class="form-control" placeholder="your organization">
+								  </div>
+								   <div class="form-group">
+								    <label for="amount">Amount Donate</label>
+								    <input type="text" id="amount" class="form-control" placeholder="       amount donate">
+								  </div>
+								  <div class="form-group">
+								    <label for="message">Message</label>
+								    <textarea id="message" style="margin-left:1em;"class="form-control" rows="3" placeholder="Enter your comments here"></textarea>
+								  </div>
+								  <div class="center">
+								  	<button class="btn-font" type="button" style="margin-bottom: 1em" id="submit">Submit</button>
+								  </div>
+							</form>
+						</div>	<!-- end of class "col-md-6" -->
+			</div>	<!-- end of class "row" -->
 
-				<div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<form action="thanks.html" method="post" role="form">
-							<label for="topicHeading" id="donorHeading" class="md-font"> Donation Registration </label>
-							  <div class="form-group">
-							    <label for="name" >First Name</label>
-							    <input id="firstName" class="form-control" placeholder="First Name">
-							  </div>
-							  <div class="form-group">
-							    <label for="name" >Last Name</label>
-							    <input id="lastName" class="form-control" placeholder="Last Name">
-							  </div>
-							  <div class="form-group">
-							    <label for="email">Your E-mail</label>
-							    <input type="email" id="email" class="form-control" placeholder="your@email.com">
-							  </div>
-							  <div class="form-group">
-							    <label for="subject">Donate By</label>
-							    <input type="text" id="organization" class="form-control" placeholder="your organization">
-							  </div>
-							   <div class="form-group">
-							    <label for="amount">Amount Donate</label>
-							    <input type="text" id="amount" class="form-control" placeholder="       amount donate">
-							  </div>
-							  <div class="form-group">
-							    <label for="message">Message</label>
-							    <textarea id="message" class="form-control" rows="3" placeholder="Enter your comments here"></textarea>
-							  </div>
-
-							  <button type="button" class="btn btn-default" id="submit">Submit</button>
-						</form>
-					</div>	<!-- end of class "col-md-6" -->
-
-					<div class="col-md-6 col-sm-6 col-xs-12" id="table">
-						<label id="heading" class="md-font">These are our donors </label>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div id="donorTableRegistry">
+						
 						<table>
 							<thead>
-									<th class="mainHeading ">Name</th>
-									<th class="mainHeading">Organization</th>
-									<th class="mainHeading">Contact</th>
-									<th class="mainHeading">Registered Date</th>
-									<th class="mainHeading">Amount Donated</th>
+									<th class="mainHeading sm-font ">Name</th>
+									<th class="mainHeading sm-font">Organization</th>
+									<th class="mainHeading sm-font">Contact</th>
+									<th class="mainHeading sm-font">Registered Date</th>
+									<th class="mainHeading sm-font">Amount Donated</th>
 							</thead>
 							<tbody id="donorTable">
 
 
 							</tbody>
 						</table>
-						<div id="thanksMessage">
+			</div>	<!-- end of id "donorTable" -->
 
-						</div>
-					</div>	<!-- end of class "col-md-6" -->
-				</div>	<!-- end of class "row" -->
-	</div>	<!-- end of class "container" -->
+			<div id="thanksMessage">
+					<div class='thankYou' style="text-align:center">
+							<img id='thankYouSign' src='images/thankYou.png'/>
+							<p class="lg-font" id="donorName"> </p><p class="lg-font"> For your support, Your donation will help Reduce Stress, Increase Strength, and Build from Within Our Community.</p> 
+							<button class='btn-font' style="margin-right:1em;"id='close'>Close</button>
+							<button class='btn-font' id='viewDonorRegistry'>View Donor Registry</button>
+							<button class='btn-font' id='hideViewDonorRegistry'>Hide Donor Registry</button>
+					</div>	<!-- end of class "thankYou" -->
+			</div>	<!-- end of div id "thanksMessage" -->
 
 			<script type="text/javascript" src="js/donor.js"></script>
-
-		</body>
-		
+		</body>		
 </html>

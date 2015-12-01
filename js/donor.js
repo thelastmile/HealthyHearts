@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-
 		$("#submit").click(function(){
 
 				$donorFirstName = $("#firstName").val();
@@ -13,7 +12,7 @@ $(document).ready(function(){
 
 				var fullName = $donorLastName +', '+ $donorFirstName;
 
-				thankYouMessage(fullName);
+				var name = $donorFirstName +' '+ $donorLastName;
 
 				var now = new Date();
 				var registDate = now.toDateString(); 
@@ -23,6 +22,7 @@ $(document).ready(function(){
 
 				registry(fullName, $donorEmail, $donorOrg, $donorAmount, $donorMessage, registDate);
 
+				thankYouMessage(name);
 		});		
 
 });
@@ -50,9 +50,7 @@ function registry(name, email, org, amount, message, date){
 		s.unshift(object);
 		localStorage.setItem("donorRegistry", JSON.stringify(s));
 	}
-
-	window.location.reload();
-
+	// window.location.reload();
 };
 
 function listOfDonor(){
@@ -73,19 +71,23 @@ function listOfDonor(){
 listOfDonor();
 
 function thankYouMessage(name){
-	// $("#thanksMessage").append("<p>Thank you, <h3>" +name+ "</h3> for your donation and support</p>");
-		alert("Thank you " +name+ " for your support and donation.\n\n Your name and organization will be added to our donation list.\n");
+		$("#donorName").html(name);
+		$("#donorForm").hide();
+		$("#thanksMessage").show();
 
+		$("#viewDonorRegistry").click(function(){
+				$("#donorTableRegistry").show();
+				$("#viewDonorRegistry").hide();
+				$("#hideViewDonorRegistry").show();				
+		});
+
+		$("#hideViewDonorRegistry").click(function(){
+			$("#donorTableRegistry").hide();
+			$("#hideViewDonorRegistry").hide();
+			$("#viewDonorRegistry").show();
+		});	
 };
 
-$("#viewSponsor").click(function(){
-	$("#table").show();
-	$("#hideViewSponsor").show();
-	$("#viewSponsor").hide();
+$("#close").on("click",function(){
+		window.location.reload();
 });
-
-$("#hideViewSponsor").click(function(){
-	$("#table").hide();
-	$("#hideViewSponsor").hide();
-	$("#viewSponsor").show();
-})

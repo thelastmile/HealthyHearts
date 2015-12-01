@@ -44,7 +44,7 @@ div.clipPicture{
 }
 
 #video3{
-  width: 60em;
+  width: 70em;
   height: 30em;
   position: relative;
   left: -180%;
@@ -128,6 +128,15 @@ nav{
 img{
   position: relative;
   left: 17em;
+}
+
+.item img{
+  
+}
+
+.logoImg{
+  position: relative;
+  left: 0;
 }
 
 .carousel-indicators .active{

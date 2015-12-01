@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-
 		$("#submit").click(function(){
 
 				$getInvolvedFirstName = $("#firstName").val();
@@ -11,15 +10,18 @@ $(document).ready(function(){
 				$getInvolvedState = $("#state").val();
 				$getInvolvedMessage = $("#message").val();
 
+				$("#registionForm").hide();
+
 				var fullName = $getInvolvedLastName +', '+ $getInvolvedFirstName;
 
-				thankYouMessage(fullName);
+				var name = $getInvolvedFirstName +' '+ $getInvolvedLastName;
 
 				var now = new Date();
 				var getInvolvedDate = now.toDateString(); 
 
 				registry(fullName, $getInvolvedEmail, $getInvolvedCity, $getInvolvedState, $getInvolvedMessage, getInvolvedDate);
-
+			
+				thankYouMessage(name);
 		});		
 
 });
@@ -47,13 +49,11 @@ function registry(name, email, city, state, message, date){
 		s.unshift(object);
 		localStorage.setItem("involvedRegistry", JSON.stringify(s));
 	}
-
-	window.location.reload();
-
+	// window.location.reload();
 };
 
 function getInvolvedList(){
-	
+	console.log("you're in the local storage");
 	var involvedList = JSON.parse(localStorage.getItem("involvedRegistry"));
 
 	for(var i = 0; i < involvedList.length; i++)
@@ -67,23 +67,33 @@ function getInvolvedList(){
 
 		$("#getInvolveTable").append("<tr><th>" +name+ "</th><td>" +email+ "</td><td>" +city+ "</td><td>" +state+ "</td><td>" +registerDate+ "</td><td>" +message+ "</td></tr>");
 	}
+
 };
 getInvolvedList();
 
+
 function thankYouMessage(name){
-	// $("#thanksMessage").append("<p>Thank you, <h3>" +name+ "</h3> for your donation and support</p>");
-		alert("Thank you " +name+ " for registering with Healthy Heart Institute.\n\n Any programs you wish to participate or be apart of, be sure to stated in the 'registry form' message field. You will be notify through the contact information you provided.\n");
+
+		$("#registeredName").html(name);
+
+		$("#registrationForm").hide();
+		$("#thanksMessage").show();
+
+		$("#viewRegistry").click(function(){
+				$("#registryTable").show();
+				$("#viewRegistry").hide();
+				$("#hideViewRegistry").show();				
+		});
+
+		$("#hideViewRegistry").click(function(){
+			$("#registryTable").hide();
+			$("#hideViewRegistry").hide();
+			$("#viewRegistry").show();
+		});	
 
 };
 
-$("#viewRegistry").click(function(){
-	$("#table").show();
-	$("#hideViewRegistry").show();
-	$("#viewRegistry").hide();
+$("#close").on("click",function(){
+		window.location.reload();
 });
 
-$("#hideViewRegistry").click(function(){
-	$("#table").hide();
-	$("#hideViewRegistry").hide();
-	$("#viewRegistry").show();
-})

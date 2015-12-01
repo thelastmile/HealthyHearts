@@ -10,150 +10,103 @@
 			<script type="text/javascript" src="lib/jquery.js"></script>
 			<script type="text/javascript" src="lib/bootstrap.js"></script>	
 			<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+
+		  <link rel="stylesheet" href="lib/jquery-ui.min.css">
+      <script src="lib/jquery-ui.min.js"></script>
 		</head>
 
 		<body>
 			
-	<header class="entry-header">
-		<div class="inner">
-			<div class="col-md-4">
-				<h1 class="entry-title lg-font white" style="margin-top:0">Healthy Hearts Institute</h1>
-			</div>
-			<div class='col-md-8'>
-			<nav>
-				<ul>
-					<li><a class="sm-font white"href="index.html">HOME</a></li>
-					<li><a class="sm-font white"href="admin.html">BLOG</a></li>
-					<li><a class="sm-font white"href="communityEvent.html">EVENTS</a></li>
-					<li><a class="sm-font white"href="getInvolve.html">GET INVOLVED</a></li>
-					<li><a class="sm-font black donar"href="donor.html">SPONSER</a></li>
-				</ul>
-			</nav>
-			</div>
-		</div>
-	</header>	
-			
+				<header class="entry-header">
+					<div class="inner">
+							<div class="col-md-4">
+								<a href="index.html"><img src="images/HHI_logo_New.png" style="width:26em;"></a> 
+							</div>
+							<div class='col-md-8' style="margin-top:1.5em">
+									<nav>
+											<ul>
+												<li><a class="sm-font white"href="index.html">HOME</a></li>
+												<li><a class="sm-font white"href="admin.html">BLOG</a></li>
+												<li><a class="sm-font white"href="communityEvent.html">EVENTS</a></li>
+												<li><a class="sm-font white"href="getInvolve.html">GET INVOLVED</a></li>
+												<li><a class="sm-font black donar"href="donor.html">SPONSOR</a></li>
+											</ul>
+									</nav>
+							</div>	<!-- end of class "col-md-8" -->
+					</div>	<!-- end of class "inner" -->
+				</header>	
+	
+				<!-- <div class="row topic"> -->
+				<div class="row">
+					  <p class="lg-font center black"  style="margin-top:4em;">Help Bring Life Back Into your Community </p>
+				</div>	<!-- end of class "row" -->
 
-			<!-- <div class="row topic"> -->
-			<div class="row">
-				  <p class="lg-font center" style="margin-top:3em;"> Learn How To Get Involved </p>
-			</div>
-			<div class='row'>
-				<div class="col-md-6">
-						<form action="thanks.html" method="post">
-				<label class="center md-font white" style="padding-top:1em;"> Register To Get Involved </label>
-				  <div>
-				    <label for="name">First Name</label>
-				    <input id="firstName" placeholder="first name">
-				  </div>
-				  <div>
-				    <label for="name">Last Name</label>
-				    <input id="lastName" placeholder="last name">
-				  </div>
-				  <div>
-				    <label for="email">Your E-mail</label>
-				    <input type="email" id="email" placeholder="your@email.com">
-				  </div>
-				  <div>
-				    <label for="city">City</label>
-				    <input type="text" id="city" placeholder="your city">
-				  </div>
-				  <div>
-				    <label for="state">State</label>
-				    <input type="text" id="state" placeholder="your state">
-				  </div>
-				  <div>
-				    <label for="message">Message</label>
-				    <textarea id="message" placeholder="Enter your comments here"></textarea>
-				  </div>
-
-				  <button class="btn-font" type="button" id="submit" style="margin-top:1em">Submit</button>
-			</form>
+				<div class='row' id="registrationForm">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+							<form action="thanks.html" method="post">
+									<label class="center md-font white" style="padding-top:1em;"> Register Now</label>
+								  <div>
+								    <label for="name">First Name</label>
+								    <input id="firstName" placeholder="first name">
+								  </div>
+								  <div>
+								    <label for="name">Last Name</label>
+								    <input id="lastName" placeholder="last name">
+								  </div>
+								  <div>
+								    <label for="email">Your E-mail</label>
+								    <input type="email" id="email" placeholder="your@email.com">
+								  </div>
+								  <div>
+								    <label for="city">City</label>
+								    <input type="text" id="city" placeholder="your city">
+								  </div>
+								  <div>
+								    <label for="state">State</label>
+								    <input type="text" id="state" placeholder="your state">
+								  </div>
+								  <div>
+								    <label for="message">Message</label>
+								    <textarea id="message" placeholder="Enter your comments here"></textarea>
+								  </div>
+								  <div class="center">
+								  	<button class="btn-font" type="button" id="submit" style="margin-top:1em; margin-bottom:1em;">Submit</button>
+								  </div>
+							</form>
 				</div>
-				<div class="col-md-6">
-					<button class="btn-font" id="viewRegistry">View Registry</button>
-					<button  class="btn-font" id="hideViewRegistry">Hide View Registry</button>
-
-					<div id="table">
-				<label id="heading"> Thank-you for Helping</label>
-				<table>
-					<thead>
-							<th class="mainHeading">Name</th>
-							<th class="mainHeading">Email</th>
-							<th class="mainHeading">City</th>
-							<th class="mainHeading">State</th>
-							<th class="mainHeading">registered date</th>
-							<th class="mainHeading">comments</th>
-					</thead>
-					<tbody id="getInvolveTable">
-
-
-					</tbody>
-				</table>
 			</div>
 
+			<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="registryTable">						
+							<table>
+								<thead>
+										<th class="mainHeading sm-font">Name</th>
+										<th class="mainHeading sm-font">Email</th>
+										<th class="mainHeading sm-font">City</th>
+										<th class="mainHeading sm-font">State</th>
+										<th class="mainHeading sm-font">registered date</th>
+										<th class="mainHeading sm-font">comments</th>
+								</thead>
+								<tbody id="getInvolveTable">
 
-				</div>
+								</tbody>
+							</table>
+					</div>	<!-- end of div id "registryTable" -->
+			</div>	<!-- end of class "col-md-12" -->			
 
-
-
-
-
-					
-			</div>
-
-			<!-- </div>
- -->
-			<!-- <form action="thanks.html" method="post">
-				<label id="donorHeading"> Register To Get Involved </label>
-				  <div>
-				    <label for="name">First Name</label>
-				    <input id="firstName" placeholder="first name">
-				  </div>
-				  <div>
-				    <label for="name">Last Name</label>
-				    <input id="lastName" placeholder="last name">
-				  </div>
-				  <div>
-				    <label for="email">Your E-mail</label>
-				    <input type="email" id="email" placeholder="your@email.com">
-				  </div>
-				  <div>
-				    <label for="city">City</label>
-				    <input type="text" id="city" placeholder="your city">
-				  </div>
-				  <div>
-				    <label for="state">State</label>
-				    <input type="text" id="state" placeholder="your state">
-				  </div>
-				  <div>
-				    <label for="message">Message</label>
-				    <textarea id="message" placeholder="Enter your comments here"></textarea>
-				  </div>
-
-				  <button type="button" id="submit">Submit</button>
-			</form>
- -->
-			<div id="table">
-				<label id="heading"> These are the individuals who want to get involved </label>
-				<table>
-					<thead>
-							<th class="mainHeading">Name</th>
-							<th class="mainHeading">Email</th>
-							<th class="mainHeading">City</th>
-							<th class="mainHeading">State</th>
-							<th class="mainHeading">registered date</th>
-							<th class="mainHeading">comments</th>
-					</thead>
-					<tbody id="getInvolveTable">
-
-
-					</tbody>
-				</table>
-			</div>
+			<div id="thanksMessage">
+				<div class='thankYou' style="text-align:center;">
+						<img id='thankYouSign' src='images/thankYou.png'/>
+						<p class="lg-font"id="registeredName"> </p><p class="lg-font"> For having the Heart to Partner with us to Bring Change to Our Community. You will be contacted so we can discuss how we can work together.
+						</p> 
+						<div class="involvedBtn">
+							<button class='btn-font' style="margin-right:1em;"id='close'>Close</button>
+							<button class='btn-font' id='viewRegistry'>View Registry</button>
+							<button class='btn-font' id='hideViewRegistry'>Hide Registry</button>
+						</div>	<!-- end of class "involvedBtn" -->
+				</div>	<!-- end of class "thankYou" -->
+			</div>	<!-- end of div id "thanksMessage" -->
 
 			<script type="text/javascript" src="js/getInvolved.js"></script>
-
-		</body>
-		
+	</body>		
 </html>
