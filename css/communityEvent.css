@@ -16,44 +16,8 @@ div.clipPicture{
   margin: .25em;
 }
 
-#videoP{
-    width: 106%;
-    height: 7em;
-    position: relative;
-    left: -3%;
-    top: 0.25em;
-/*    display: none;*/
-}
-
-#video1{
-    width: 60em;
-    height: 30em;
-    position: relative;
-    left: 53%;
-    top: 2.25em;
-    display: none;
-}
-
-#video2{
-  width: 60em;
-  height: 30em;
-  position: relative;
-  left: -70%;
-  top: 2.25em;
-  display: none;
-}
-
-#video3{
-  width: 70em;
-  height: 30em;
-  position: relative;
-  left: -180%;
-  top: 2.25em;
-  display: none;
-}
-
 .picGallery{
-    width: 99%;
+    width: 192%;
     position: absolute;
     top: 21em;
     padding: 5px;
@@ -62,13 +26,6 @@ div.clipPicture{
 
 p{
   color: white;
-}
-
-#picPlaceHolder, .placeHolder{
-  width: 76%;
-  left: 19%;
-  font-size: 4em;
-  border-right-width: 28px;
 }
 
 .carousel-indicators li {
@@ -98,11 +55,61 @@ nav{
   font-size: 0.5em;
 }
 
+#videoP{
+    width: 13em;
+    height: 7em;
+    position: relative;
+    left: 13%;
+    top: 0.25em;
+/*    display: none;*/
+}
+
 .placeHolder{
-/*    border: 2px solid black;*/
+    width: 1em;
+    border-right-width: 28px;
     position: absolute;
-    left: 9%;
+    left: 18%;
     font-size: 5.05em;
+}
+
+.clipVideo{
+    width: 76%;
+    font-size: 4em;
+    border-right-width: 28px;
+    position: absolute;
+    left: 20%;
+    font-size: 4.05em;
+    margin-top: .5em;
+}
+
+#video1{
+ /*   width: 60em;
+    height: 30em;
+    position: absolute;
+    left: -2%;
+    top: 2.25em;*/
+    width: 76%;
+    display: none;
+}
+
+#video2{
+ /* width: 60em;
+  height: 30em;
+  position: absolute;
+  left: -3%;
+  top: 2.25em;*/
+  width: 76%;
+  display: none;
+}
+
+#video3{
+/*  width: 70em;
+  height: 30em;
+  position: absolute;
+  left: -12%;
+  top: 2.25em;*/
+  width: 76%;
+  display: none;
 }
 
 #message1{
@@ -125,13 +132,8 @@ nav{
 /*      background: linear-gradient(to top, white, black);*/
 }
 
-img{
-  position: relative;
-  left: 17em;
-}
-
 .item img{
-  
+    width: 100%;
 }
 
 .logoImg{
@@ -143,16 +145,14 @@ img{
     position: relative;
     left: 15em;
     top: -22em;
-    color: blue;
-  
+    color: blue;  
 }
 
 .carousel-indicators li{
-    position: relative;
-    left: 15em;
-    top: -22em;
+    position: absolute;
+    left: 21em;
+    top: -19em;
     color: blue;
-  
 }
 
 .carousel-control{
@@ -175,5 +175,20 @@ img{
 .format1{
     padding: 3em;
     margin: -2em;
+}
+
+img.p1{
+  position: absolute;
+  left: -4em;
+}
+
+img.p2{
+  position: absolute;
+  left: 3em;
+}
+
+img.p3{
+  position: absolute;
+  left: 10em;
 }
 

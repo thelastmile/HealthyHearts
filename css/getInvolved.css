@@ -1,5 +1,10 @@
 /*load new Text*/
 
+body{
+  background-image: url("/home/student/Desktop/HHI FINAL/images/richmond.jpg");
+  background-size: cover;
+}
+
 @font-face {
     font-family: SF-Compact-Text-Bold;
     src: url("../type/SF-Compact-Text-Bold.otf");
@@ -142,8 +147,6 @@ textarea:focus {
     transform: scale(1.25);
 }
 
-
-
 /*The below styles apply to the display of table*/
 
 form{
@@ -163,12 +166,10 @@ form input{
 }
 
 table{
-  width: 600px;
-  position: absolute;
-  left: 32%;
+  width: 784px;
   margin-right: auto;
   margin-left: auto;
-  top: 43em;
+  margin-top: 2.5em;
 }
 
 label#heading{
@@ -182,7 +183,7 @@ label#heading{
 
 #registryTable{
   display: none;
-  width: 40%;
+  width: 100%;
 
 }
 
@@ -237,14 +238,25 @@ input#amount{
   color: red;
 }
 
+.involvedBtn{
+  width: 36em;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #thanksMessage{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8%;
+    margin-top: 2%;
     display: none;
 }
+
+#registeredName{
+  font-family: bold;
+  font-size: 5.5em;
+}
+
 .thankYou{
   width: 100%;
 }

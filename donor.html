@@ -15,7 +15,7 @@
 				<header class="entry-header">
 					<div class="inner">
 							<div class="col-md-4">
-								<a href="index.html"><img src="images/HHI_logo_New.png" style="width:26em;"></a> 
+								<a href="index.html"><img src="images/whiteLogo.png" style="width:26em;"></a> 
 							</div>
 							<div class='col-md-8'  style="margin-top:1.5em">
 									<nav>
@@ -32,13 +32,13 @@
 				</header>	<!-- end of class "entry-header" -->
 	
 				<div class='row'>
-					<p class="lg-font center black"  style="margin-top:4em; margin-bottom:.5em;" >Do You Have The Heart To Help...</p>
+					<p class="lg-font center black"  style="margin-top:4em; margin-bottom:.1em;" >Do You Have The Heart To Help</p>
 				</div>	<!-- end of class "row" -->
 				
 				<div class="row" id="donorForm">
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<form action="thanks.html" method="post" role="form">
-								<label for="topicHeading" class="md-font center white"> Donate Now </label>
+								<label for="topicHeading" class="md-font center white" style="padding-top:.5em"> Donate Now </label>
 								  <div class="form-group">
 								    <label for="name" >First Name</label>
 								    <input id="firstName" class="form-control" placeholder="First Name">
@@ -70,6 +70,18 @@
 						</div>	<!-- end of class "col-md-6" -->
 			</div>	<!-- end of class "row" -->
 
+			<div id="thanksMessage">
+					<div class='thankYou' style="text-align:center">
+							<img id='thankYouSign' src='images/thankYou.png'/>
+							<p class="lg-font" id="donorName"> </p><p class="lg-font"> Your donation will help reduce stress, increase strength, and build from within our community.</p> 
+							<div class="donorViewBtn">
+									<button class='btn-font' style="margin-right:1em;"id='close'>Close</button>
+									<button class='btn-font' id='viewDonorRegistry'>View Donor Registry</button>
+									<button class='btn-font' id='hideViewDonorRegistry'>Hide Donor Registry</button>
+							</div>	<!-- end of class "donorViewBtn" -->
+					</div>	<!-- end of class "thankYou" -->
+			</div>	<!-- end of div id "thanksMessage" -->
+
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<div id="donorTableRegistry">
 						
@@ -87,16 +99,6 @@
 							</tbody>
 						</table>
 			</div>	<!-- end of id "donorTable" -->
-
-			<div id="thanksMessage">
-					<div class='thankYou' style="text-align:center">
-							<img id='thankYouSign' src='images/thankYou.png'/>
-							<p class="lg-font" id="donorName"> </p><p class="lg-font"> For your support, Your donation will help Reduce Stress, Increase Strength, and Build from Within Our Community.</p> 
-							<button class='btn-font' style="margin-right:1em;"id='close'>Close</button>
-							<button class='btn-font' id='viewDonorRegistry'>View Donor Registry</button>
-							<button class='btn-font' id='hideViewDonorRegistry'>Hide Donor Registry</button>
-					</div>	<!-- end of class "thankYou" -->
-			</div>	<!-- end of div id "thanksMessage" -->
 
 			<script type="text/javascript" src="js/donor.js"></script>
 		</body>		

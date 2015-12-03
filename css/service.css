@@ -36,6 +36,12 @@ div {
     font-size: 25px;
     line-height: 30px;
 }
+.x-md-font{
+     font-family: SF-Compact-Text-Light;
+    font-size: 35px;
+    line-height: 30px;
+
+}
 
 .sm-font{ 
     font-family:SF-Compact-Text-Bold; ;
@@ -76,11 +82,16 @@ div {
 
 /*Header Styling amd navbar*/
 .entry-header{
-     background: linear-gradient(rgba(0,0,0,.8), rgba(101,101,101,.5)); 
+     background: linear-gradient(rgba(0,0,0,.8), rgba(101,101,101,.1)); 
  }
 
 .inner{
     width: 100%;
+
+}
+.head{
+    background: linear-gradient(rgba(0,0,0,.8), rgba(101,101,101,.5)); 
+    height: 6em;
 }
 
 nav ul {
@@ -118,19 +129,21 @@ nav a:hover{
 
 /*Stress Management section*/
 .yogaBackground{
-	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/yogaGirl.jpg) no-repeat fixed center / cover;
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/yogaGirl.jpg) no-repeat fixed top / cover;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 25em;
 	min-height: 45em;
 }
 .stressTitle{
+    text-align: center;
 	margin-right: auto;
 	margin-left: auto;
 	width: 50%;
 	position:relative;
-	top: 44%;
+	top: 7em;
 	color: white;
+    line-height: 1.5em;
 }
 .classInfo{
 	width: 40%;
@@ -148,11 +161,11 @@ nav a:hover{
 
 /*Strength section*/
 .strengthBackground{
-  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/fitMan.jpg) no-repeat fixed center / cover;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 25em;
-	min-height: 45em;
+     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/fitMan.jpg) no-repeat fixed top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25em;
+    min-height: 45em;
 }
 
 /*standard service size*/
@@ -169,4 +182,31 @@ nav a:hover{
 	min-height: 17em;
 }
 
+@media (max-width: 30em){
+    
+    .text ul > li{
+        font-size: 18px;
+     }
+    .text p{
+        font-size: 16px;
 
+    }
+    .donar{
+        background-color: white;
+        border-radius:0em 
+    }
+    .navSize{
+        font-size: 16px;
+        width:100%;
+    }
+   .navSize:hover{
+    background-color: #424141;
+    color: white;
+   }
+    .donar:hover{
+        background-color: #28b6ed;
+        color: #e84748;
+    }
+
+
+}

@@ -47,7 +47,7 @@ div {
 .md-font{
     font-family: SF-Compact-Text-Medium;
     font-size: 25px;
-    line-height: 30px;
+    line-height: 41px;
 }
 
 .sm-font{ 
@@ -142,8 +142,8 @@ div {
 Header Styling nad nav bar
 */
 .entry-header{
-     background: linear-gradient(rgba(0,0,0,.8), rgba(101,101,101,.5));
-     /*background:  rgba(101,101,101,.5);*/
+     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5));
+     height: 7em;
  }
 .inner{
     width: 100%;
@@ -188,8 +188,8 @@ nav a:hover{
 }
 */
 .homeTitle{
-  margin-top: 3em;
-  width: 47%;
+  margin-top: 6em;
+  width: 66%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -325,25 +325,3 @@ nav a:hover{
         position: relative;
     top: -6em;
 }
-/*
-.format{
-    margin-top: 3em;
-    background-color: orangered;
-    color: white;
-    border: none;
-}
-
-.format1{
-    margin-top: 3em;
-    background-color: orangered;
-    color: white;
-    border: none;
-    position: relative;
-    left: 8em;
-}
-
-.format1:hover,.format:hover{
-    color: blue;
-    transform: scale(1.5);
-
-}*/

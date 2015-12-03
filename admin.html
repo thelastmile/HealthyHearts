@@ -5,100 +5,110 @@
 	<title>adminLogin</title>
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
-	
+	<link rel="stylesheet" type="text/css" href="css/admin.css">	
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/bootstrap.js"></script>
 </head>
 <body>
 
-		<!-- nav header -->
-		<header class="entry-header">
-			<div class="inner">
-					<div class="col-md-4">
-						<a href="index.html"><img src="images/HHI_logo_New.png" class="logoImg"style="width:26em;"></a> 
-					</div>	<!-- end of class "col-md-4" -->				
-					<div class='col-md-8' style="margin-top:1.5em">
-						<nav>
-						<ul>
-							<li><a class="sm-font white"href="index.html">HOME</a></li>
-							<li><a class="sm-font white"href="admin.html">BLOG</a></li>
-							<li><a class="sm-font white"href="communityEvent.html">EVENTS</a></li>
-							<li><a class="sm-font white"href="getInvolve.html">GET INVOLVED</a></li>
-							<li><a class="sm-font black donar"href="donor.html">SPONSOR</a></li>
-						</ul>
-						</nav>
-					</div>	<!-- end of class "col-md-8" -->
-			</div>	<!-- end of class "inner" -->
-		</header>
-
-		<!-- dropdown for login -->
-			<ul class="login">
-				<li class="dropdown">			
+	<header class="entry-header">
+		<div class="inner">
+			<div class="col-md-4">
+				<a href="index.html"><img src="images/whiteLogo.png" style="width:26em;"></a>
+			</div>
+		<div class='col-md-8' style="margin-top:1.5em">
+			<nav>
+				<ul>
+					<li><a class="sm-font white"href="index.html">HOME</a></li>
+					<li class="dropdown">
+						<a href="#" class="name dropdown-toggle white LogInHover sm-font white" data-toggle="dropdown">Admin Log-in <span class="caret"> 
+						</a>
 					<ul class="dropdown-menu" role="menu">
-						<li data-toggle="modal" data-target="#loginModal"><a href="#">Log-in</a></li>   
+					<li data-toggle="modal" data-target="#loginModal"><a href="#">Log-in</a></li>
 					</ul>
-				</li>
-			</ul>
+					</li>
+					
+					<li><a class="sm-font white"href="communityEvent.html">EVENTS</a></li>
+					<li><a class="sm-font white"href="getInvolve.html">GET INVOLVED</a></li>
+					<li><a class="sm-font black donar"href="donor.html">SPONSOR</a></li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+	</header>
+
+		<ul class="login">
+			<li class="dropdown">			
+				<ul class="dropdown-menu" role="menu">
+					<li data-toggle="modal" data-target="#loginModal"><a href="#">Log-in</a></li>   
+				</ul>
+			</li>
+		</ul>
 
 		<!-- log-in of modal -->
 		<div id="loginModal" class="modal fade">
 			<div class="modal-dialog">
-					<div class="modal-content" style="position: relative;top:16em; left:0em;background-color:#4f5670">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-								<button class="modal-title purple md-font" style="position:relative;left:7em;">Administrator Please Sign-in</button>
+				<div class="modal-content" style="position: relative;top:16em; left:0em;background-color:#4f5670">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<button class="modal-title purple md-font" style="position:relative;left:7em;">Administrator Please Sign-in</button>
+					</div>
+					<div class="modal-body" >
+						<form role="form">
+							<div class="form-group">
+								<label for="inputName" class="sm-font red">Name</label>
+								<input type="text" class="form-control sm-font" id="inputName" placeholder="Enter name">
 							</div>
-							<div class="modal-body" >
-								<form role="form">
-									<div class="form-group">
-										<label for="inputName" class="sm-font red">Name</label>
-										<input type="text" class="form-control sm-font" id="inputName" placeholder="Enter name">
-									</div>
-									<div class="form-group">
-										<label for="inputPassword1" class="sm-font red">Password</label>
-										<input type="password" class="form-control sm-font" id="inputPassword1" placeholder="Password">
-										</div>	 
-										<button type="button" class="btn btn-default" id="loginSubmit" data-dismiss="modal">Submit</button>
-								</form>
-							</div>
-					</div><!-- /.modal-content -->
+							<div class="form-group">
+								<label for="inputPassword1" class="sm-font red">Password</label>
+								<input type="password" class="form-control sm-font" id="inputPassword1" placeholder="Password">
+							</div>	 
+								<button type="button" class="btn btn-default" id="loginSubmit" data-dismiss="modal">Submit</button>
+						</form>
+					</div>
+				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
 
-		<img id="mainPic" src="Andrew's HHI images/background_building garden.jpg">
+		<img id="mainPic" src="images/buildGarden.jpg">
+
+<!-- 		<div class="userName">
+		
+		</div> -->
 
 		<div class="userContent">
-				<div class="mainBlog">
-					<p class="lg-font white" id="greeting">Welcome To Our Blog</p>
-					<div class='border post adjust'></div>
-					<ul id='blogPost'>
-							<!-- this area is reserve the blog -->
-					</ul>
-				</div>	<!-- end of class "mainBlog" -->
-				<div class="blogDiv">	
-					<form role="form">
-							<div class="md-font welcomeMessage white form-group">
-									Welcome <span id="adminName"> </span>
-							</div>
-							<div class="form-group">
-						 			<label for="subject" class="md-font white" focus> Blog Subject: </label>
-							    <input class="md-font black" id="subject" placeholder="Subject Title">				
-							</div>
-							<div class="form-group">
-									<textarea id="blogEntry" placeholder="Type your entry here" cols="20" rows="10"> </textarea>
-							</div>
-							<div class="form-group">
-									<p class="md-font white location">
-											Upload your picture 
-									</p>						
-									<input type="file" name="user-pic" class="location" id="selectedPic"/> 						
-									<input class="btn-font"id='blogButton' type='button' value='Post Blog' onClick='blogPost()'>					
-									<form method="post" id="fileSelector" style="position:relative;left:38%; "></form>
-							</div>			
-					</form>
-				</div>	<!-- end of class "blogDiv" -->
-		</div>	<!-- end of class "userContent" -->
+
+			<div class="mainBlog">
+				<p class="lg-font white" id="greeting">Welcome To Our Blog</p>
+				<div class='border post adjust'></div>
+				<ul id='blogPost'>
+				<!-- <h4 id="message">This area is reserved for blog</h4> -->
+				</ul>
+			</div>
+
+			<div class="blogDiv">	
+				<form role="form">
+						<div class="md-font welcomeMessage white form-group">
+								Welcome <span id="adminName"> </span>
+						</div>
+						<div class="form-group">
+					 			<label for="subject" class="md-font white" focus> Blog Subject: </label>
+						    <input class="md-font black" id="subject" placeholder="Subject Title">				
+						</div>
+						<div class="form-group">
+								<textarea id="blogEntry" placeholder="Type your entry here" cols="20" rows="10"> </textarea>
+						</div>
+						<div class="form-group">
+								<p class="md-font white location">
+										Upload your picture 
+								</p>						
+								<input type="file" name="user-pic" class="location" id="selectedPic"/> 						
+								<input class="btn-font"id='blogButton' type='button' value='Post Blog' onClick='blogPost()'>					
+								<form method="post" id="fileSelector" style="position:relative;left:38%; "></form>
+						</div>			
+				</form>
+			</div><!-- end blogDiv -->
+		</div>	
 	
 		<!-- <script type="text/javascript" src="js/finalProject.js"></script> -->
 		<script type="text/javascript" src="js/admin.js"></script>
