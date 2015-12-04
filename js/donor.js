@@ -71,6 +71,7 @@ function listOfDonor(){
 listOfDonor();
 
 function thankYouMessage(name){
+		$(".t-heading").hide();
 		$("#donorName").html(name);
 		$("#donorForm").hide();
 		$("#thanksMessage").show();

@@ -1,8 +1,10 @@
 /*load new Text*/
 
 body{
-  background-image: url("/home/student/Desktop/HHI FINAL/images/richmond.jpg");
+  background-image: url("../images/richmond.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/richmond.jpg) no-repeat fixed center / cover
 }
 
 @font-face {
@@ -155,6 +157,7 @@ form{
   margin-left: auto;
   margin-right: auto;
   box-shadow: 7px 7px 7px #424141;
+  padding-bottom: .5em;
 }
 form label {
   margin-left: 1em;
@@ -166,10 +169,13 @@ form input{
 }
 
 table{
-  width: 784px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2.5em;
+    width: 784px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8.5em;
+    color: white;
+    background: #264662;
+    margin-bottom: 12em;
 }
 
 label#heading{
@@ -184,7 +190,7 @@ label#heading{
 #registryTable{
   display: none;
   width: 100%;
-
+  margin-top: -22%;
 }
 
 th, td{
@@ -245,11 +251,12 @@ input#amount{
 }
 
 #thanksMessage{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    display: none;
+  width: 56%;
+  height: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  display: none;
 }
 
 #registeredName{
@@ -259,6 +266,9 @@ input#amount{
 
 .thankYou{
   width: 100%;
+  padding: 17px;
+  background: #0C2B46;
+  box-shadow: 7px 5px 10px #424141;
 }
 
 #thankYouSign{
@@ -271,4 +281,13 @@ input#amount{
   margin-left: auto;
 }
 
+#flowingText{
+    position: absolute;
+    top: 4em;
+    font-size: 2em;
+    color: white;
+}
 
+#registrationForm{
+  margin-bottom: 1.5em;
+}

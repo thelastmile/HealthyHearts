@@ -4,51 +4,46 @@
 //	log the user name onto the page
 //
 
-var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"images/Chris.png"}];
-
-// var listOfAuth = [{"userName": "lastmile","password": "code7370","userPic":"t.png"},
-// 									{"userName": "charlie","password": "thao","userPic":"DUP02175.JPG"}	
-// 								 ];		
-
-for(var i = 0; i < listOfAuth.length; i++)
-{
+var listOfAuth = [{"loginName": "founder", "password": "code7370", "userName": "Ray", "userPic":"images/ray2.png"}];
+	for(var i = 0; i < listOfAuth.length; i++)
+	{
 	var author = listOfAuth[i];
-	
-}				
+};				
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //	This function validate the user who is going to blog
 $(document).ready(function(e){
 
 	$("#loginSubmit").click(function(){
-			$userName = $("#inputName").val();
+			$loginName = $("#inputName").val();
 			$passWord = $("#inputPassword1").val();
 
 			// var userName = "lastmile";
 			// var passWord = "code7370";
 
-			$("#adminName").html($userName);
 
 			for(var i = 0; i < listOfAuth.length; i++)
 			{
 				var author = listOfAuth[i];
+
+				$("#adminName").html(author.userName);
+
 				console.log(author.userName +" "+ author.password);
 	
-				if(author.userName === $userName && author.password === $passWord)
+				if(author.loginName === $loginName && author.password === $passWord)
 				{
-					$(".adjust").animate({top:"+=350"});
 
-					$(".blogDiv").show();
+						$(".blogDiv").show();
 
-					 mainUser($userName, $passWord);
+						 mainUser(author.userName, author.password);
 
-					$("div.userName").append("<p class='greeting'>Welcome " +$userName+ "</p>");	
+						$("div.userName").append("<p class='greeting'>Welcome " +author.userName+ "</p>");	
 				}
 				else	
 				{
-					alert("Incorrect user-name and/or pass-word");
-							
-					break;
+						alert("Incorrect user-name and/or pass-word");
+								
+						break;
 				}				
 			}	
 		});

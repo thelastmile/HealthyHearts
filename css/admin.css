@@ -200,7 +200,7 @@ footer{
   font-size: 1.25em;
   position: relative;
   top: -2em;
-  left: 7%;
+  left: 8%;
   font-family: SF-Compact-Text-Bold;
 }
 
@@ -211,7 +211,7 @@ footer{
 #blogButton{
     position: absolute;
     left: 26%;
-    top: 74%;
+    top: 78%;
 }
 
 #subject{
@@ -262,7 +262,7 @@ label{
     font-size: 1em;
     position: relative;
     top: -12.5em;
-    left: 14%;
+    left: 19%;
     color: #020202;
     background-color: white;
 }
@@ -308,6 +308,6 @@ img#mainPic{
 
 #selectedPic{
   position: absolute;
-    top: 36em;
+    top: 39em;
     left: 5%;
 }

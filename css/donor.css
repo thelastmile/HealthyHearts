@@ -1,6 +1,7 @@
 
 body{
-  width: 100%;
+
+   background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.2)), url(../images/ball2.png) no-repeat fixed center / cover
 }
 
 /*load new Text*/
@@ -31,16 +32,12 @@ div {
 
 
 /*   Fixed Header
-*/.entry-header .inner {
+*/
+.entry-header .inner {
     text-align: left;
     margin-left: 3em;
     width: 100%;
 }
-.entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999; }
-    
-/*global styling 
-*/
-
 
 .lg-font{
     font-family: SF-Compact-Text-Light;
@@ -185,6 +182,8 @@ table{
   margin-right: auto;
   margin-left: auto;
   margin-top: 2.5em;
+  color: white;
+  background: #264662;
 }
 
 label#heading{
@@ -199,7 +198,7 @@ label#heading{
 #donorTableRegistry{
   display: none;
   width: 100%;
-
+  margin-bottom: 2em;
 }
 
 th, td{
@@ -247,16 +246,22 @@ input#amount{
   margin-right: auto;
   margin-left: auto;
   
-}
+  }
 .thankYou{
   width: 100%;
+  padding: 17px;
+  background: #0C2B46;
+  box-shadow: 7px 7px 7px #424141;
+  color: white;
+  position: relative;
+  top: -5em;
 }
 
 #thanksMessage{
-    width: 50%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2%;
+    margin-top: 20%;
     display: none;
 }
 

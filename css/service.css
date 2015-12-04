@@ -16,11 +16,16 @@
     font-family: SF-Compact-Text-Heavy;
     src: url("../type/SF-Compact-Text-Heavy.otf");
 }
+@font-face {
+    font-family: SF-Compact-Text-LightItalic;
+    src: url("../type/SF-Compact-Text-LightItalic.otf");
+}
 div {
     font-family: SF-Compact-Text-Bold;
     font-family: SF-Compact-Text-Light;
     font-family: SF-Compact-Text-Medium;
     font-family: SF-Compact-Text-Heavy;
+    font-family: SF-Compact-Text-LightItalic;
 }
 
 /*global styling 
@@ -50,6 +55,24 @@ div {
 .x-sm-font{ 
     font-family:SF-Compact-Text-Bold; ;
     font-size: 15px;
+}
+.class-font{
+     font-family: SF-Compact-Text-LightItalic;
+    font-size: 25px;
+    line-height: 30px
+}
+
+.sm-class-font{
+    font-family: SF-Compact-Text-Light;
+    font-size: 18px;
+    line-height: 30px
+
+}
+.md-class-font{
+    font-family: SF-Compact-Text-Bold;
+    font-size: 20px;
+    line-height: 30px
+
 }
 .white{
     color:white;
@@ -106,7 +129,7 @@ nav li{
 }
 nav a{
     display: inline-block;
-    width: 13em;
+    width: 10em;
     padding: .5em;
     text-align: center;
 }
@@ -125,6 +148,7 @@ nav a:hover{
 .donar{
     background-color: white;
     border-radius: 2em;
+    margin-left: 1.5em;
 }
 
 /*Stress Management section*/
@@ -180,6 +204,9 @@ nav a:hover{
 	/*width: 47%;*/
 	box-shadow: 6px 6px 6px #424141;
 	min-height: 17em;
+}
+.col-md-5 .col-xs-5{
+    padding: .75em;
 }
 
 @media (max-width: 30em){

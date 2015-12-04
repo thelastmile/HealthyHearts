@@ -47,7 +47,7 @@ div {
 .md-font{
     font-family: SF-Compact-Text-Medium;
     font-size: 25px;
-    line-height: 41px;
+    line-height: 30px;
 }
 
 .sm-font{ 
@@ -143,6 +143,7 @@ Header Styling nad nav bar
 */
 .entry-header{
      background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5));
+     /*background:  rgba(101,101,101,.5);*/
      height: 7em;
  }
 .inner{
@@ -160,7 +161,7 @@ nav li{
 }
 nav a{
     display: inline-block;
-    width: 13em;
+    width: 10em;
     padding: .5em;
     text-align: center;
 }
@@ -179,6 +180,7 @@ nav a:hover{
 .donar{
     background-color: white;
     border-radius: 2em;
+    margin-left: 1.5em;
 }
 
 
@@ -189,7 +191,7 @@ nav a:hover{
 */
 .homeTitle{
   margin-top: 6em;
-  width: 66%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -223,7 +225,9 @@ nav a:hover{
 
 
 /* Slide 3 */
-#slide-4 .bcg {background-image:url('../images/yogaSunset1.jpeg')}
+#slide-4 .bcg {background-image:url('../images/yogaSunset1.jpeg')
+    
+}
 
 .stressRow{
     position: relative;
@@ -325,3 +329,25 @@ nav a:hover{
         position: relative;
     top: -6em;
 }
+/*
+.format{
+    margin-top: 3em;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+.format1{
+    margin-top: 3em;
+    background-color: orangered;
+    color: white;
+    border: none;
+    position: relative;
+    left: 8em;
+}
+
+.format1:hover,.format:hover{
+    color: blue;
+    transform: scale(1.5);
+
+}*/
