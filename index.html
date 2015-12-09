@@ -11,14 +11,18 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/indexStyle.css">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
-	
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">	
 	<script src="js/ga.js"></script>
 	<script src="js/modernizr-2.7.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>    
+  <script src="js/imagesloaded.js"></script>
+  <script src="js/skrollr.js"></script>
+  <script src="js/_main.js"></script>
+  <script type="text/javascript" src="lib/bootstrap.js"></script>
 
 </head>
 
-<body class="loaded" style="height: 6477px;">
+<body class="loaded">
 	<!-- Fixed Nav bar section -->
 	<header class="entry-header">
 		<div class="inner">
@@ -28,7 +32,7 @@
 			<div class='col-md-8' style="margin-top:1.5em">
 			<nav>
 				<ul>
-					<li><a class="sm-font white"href="index.html">HOME</a></li>
+					<li><a class="sm-font active"href="index.html">HOME</a></li>
 					<li><a class="sm-font white"href="admin.html">BLOG</a></li>
 					<li><a class="sm-font white"href="communityEvent.html">EVENTS</a></li>
 					<li><a class="sm-font white"href="getInvolve.html">GET INVOLVED</a></li>
@@ -41,7 +45,7 @@
    	
 	<main>
 		<!-- Slide #1 Home Page -->
-	  <section id="slide-1" class="homeSlide" style="height: 881px;">
+	  <section id="slide-1" class="homeSlide" style="height: 1000px;">
 	  	<div class="bcg skrollable skrollable-after" data-center="background-position: 50% 0px;"  data-anchor-target="#slide-1" style="background-position: 50% -100px;">
 	    	<div class="hsContainer">
 		  		<div class="hsContent skrollable skrollable-after" data-300-top="opacity: 1"  data-top="opacity:0;"data-anchor-target="#slide-1 p">
@@ -62,12 +66,12 @@
 		  			<p class="lg-font black" style="margin-top:1em">WHAT WE OFFER</p>
 		  			<div class="col-3 yoga">
 
-			    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0;">
+			    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-6-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0;">
 
 			    			<img src="images/YogaCircle.png"></a></h2>
 
-			    		<a href="stress.html"><p class="black md-font iconTitle" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0; margin-top:1.7em;">
-			    		YOGA</p></a>
+			    		<a href="stress.html"><p class="black md-font iconTitle" data-center="opacity: 1" data--200-bottom="opacity: 0" data--top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0; margin-top:1.7em;">
+			    		URBAN ZEN</p></a>
 			    		<p class="black icon-font" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0;">Learn how to handle the pressures of everyday life</p>
 		  			</div>
 
@@ -78,7 +82,7 @@
 
 			    		<a href="strength.html"><p class="black md-font iconTitle" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0; margin-top:1.7em;">
 			    		STRENGTH</p></a>
-			    		<p class="black icon-font" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0;">Learn how to increase body strength & stamina</p>
+			    		<p class="black icon-font" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" class="skrollable skrollable-after" style="opacity: 0;">Learn how to increase strength and endurance</p>
 		  			</div>
 
 		  			<div class="col-3">
@@ -96,10 +100,12 @@
 		  
 		<!--   Stress Management Page -->
 		<section id="slide-4" class="homeSlide homeSlideTall" style="height: 1762px;">
-			<div class="bcg skrollable skrollable-between" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4" style="background-position: 50% -97.4262px;">
+			<div class="bcg skrollable skrollable-between" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 85% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4" style="background-position: 50% -97.4262px;">
 				<div class='stressRow'>
-					<p class='lg-font white center'>STRESS MANAGEMENT</p>
-					<p class='md-font white center'>Healthy Hearts Institute address many health issues resulting in a positive impact on the Overall Health of the Community</p>
+					<div class="stressBack">
+						<p class='lg-font white center'>STRESS MANAGEMENT</p>
+						<p class='md-font white center'>Our members learn effective stress management techniques to improve their overall mental balance and happiness</p>
+					</div>
 					<div class="learnMore">
 					<a href="stress.html"><button class="btn-font">LEARN MORE</button></a>	
 
@@ -116,13 +122,13 @@
 				<div class="curtainContainer">
 					<div class="curtain skrollable skrollable-after" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-6" style="opacity: 0.5; height: 100%; top: 0%;">
 					</div>
-					<div class="strengthRow">						
+					<div class="strengthRow">
+						<div class="strengthBack">
 							<p class="lg-font white">Strength and Conditioning</p>
-							<p class='md-font white'>Our health & wellness centers educate and provide support necessary for individuals to enhance their mental balance and happiness, improve their physical helath, and achieve finiacail stabllity and security</p>
-
-						<a href="strength.html"><button class="btn-font">FIND OUT HOW</button></a>							
-						<div class="copy skrollable skrollable-after" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-6 .copy" style="opacity: 0;">
-							
+							<p class='md-font white'>Our members learn easy to follow exercises that will help them gain strength, build endurance, and lose weight</p>
+						</div>
+						<a href="strength.html"><button class="btn-font">FIND OUT HOW</button></a>				
+						<div class="copy skrollable skrollable-after" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-6 .copy" style="opacity: 0;">							
 						</div>
 					</div>
 				</div>
@@ -130,19 +136,15 @@
 		</section>
 
 		<!-- Nutrition Section -->
-
-		<section id="slide-7" class="homeSlide homeSlideTall" style="height: 1100px;">
+		<section id="slide-7" class="homeSlide homeSlideTall" style="height:1100px;" >
 			<div class="bcg skrollable skrollable-between" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-7" style="background-position: 50% -97.262px;">
 				<div class="curtainContainer">
-					<div class="curtain skrollable skrollable-after" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-7" style="opacity: 0.5; height: 100%; top: 0%;">
-					</div>
-
-					<div class="stressRow">
-	
-						<div class="copy skrollable skrollable-after" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-7 .copy" style="opacity: 0;">
-							<p class="lg-font white">Nutrition</p>
-							<p class="md-font white">Breathing new life into undeserved communities by providing Community gardens and nutritional coaches, exercise equipment and fitness trainers</p>
-							
+					<div class="nutritionRow">
+						<div class="copy skrollable skrollable-after" data-bottom-top="opacity: 0" data--50-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-7 .copy" style="opacity: 0;">
+							<div class="nutritionBack">
+								<p class="lg-font white">Nutrition</p>
+								<p class="md-font white">Our members learn how to grow healthy organic produce and how to incorporate nutrient dense food into their diets to achieve optimal health</p>
+							</div>							
 							<a href="nutrition.html"><button class="btn-font">GET STARTED</button></a>	
 						</div>
 					</div>
@@ -151,44 +153,50 @@
 		</section>
 
 		<!-- Advisory Board Section -->
-		<section id="slide-9">
+
+			<section id="slide-9">
 			<div class="bcg skrollable skrollable-after" data-0="background-color:rgb(63,106,165);" data-top="background-color:(0,0,0);" data-anchor-target="#slide-9" style="height:25em;background-color: rgb(0, 0, 0);">
 		  	<div class="hsContainer" style="background-color:#28b6ed">
 		  		<div class="hsContent">
-		  			<p class="md-font white" style="margin-bottom:.25em;">ADVISORS</p>
-		  			<div class="col-3">
-			    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-9 h2" class="skrollable skrollable-after" style="opacity: 0;">
-			    			<img src="images/Chris.png"></h2>
-			    		<p class="white md-font" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-9 h2" class="skrollable skrollable-after" style="opacity: 0;">CHRIS REDLIDTZ</p>
-		  			</div>
-
-		  			<div class="col-3">
-			    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-9 h2" class="skrollable skrollable-after " style="opacity: 0;">
-			    			<img src="images/ray2.png" style="width:94%; border-radius:10em;"></h2>
-			    		<p class="white md-font" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-9 h2" class="skrollable skrollable-after" style="opacity: 0;">
-			    	HERACHIO HEARTS</p>
-		  			</div>
-
-		  			<div class="col-3">
-			    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-9 h2" class="skrollable skrollable-after" style="opacity: 0;">
-			    			<img src="images/Eric_Toda.png"></h2>
-			    		<p class="white md-font" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-9 h2" class="skrollable skrollable-after" style="opacity: 0;">ERIC TODA</p>
+		  			<p class="md-font white" style="margin-bottom:.25em; margin-top:1em; font-size:30px;">ADVISORS</p>
+		  			<div class="col-3">			    		
+			    			<img src="images/chrisfixed2.png";>
+			    			<p class="white md-font" style="margin-top:.5em" >CHRIS REDLITZ</p>
+			    			<p class="white sm-font" style="margin-top:.5em">Co-Founder of the LastMile and a thriving venture capitalist in Silicon Valley</p>
+		    		</div>
+		  			<div class="col-3">			    	
+			    			<img src="images/ray2.png" style="width:94%;"> 
+			    			<p class="white md-font" style="margin-top:.5em">HERACIO HARTS</p>
+			    			<p class="white sm-font" style="margin-top:.5em">Founder and CEO of Healthy Heart Institute. Dedicated to brining active wellness to community</p>
+		    		</div>
+		  			<div class="col-3">			    		
+			    			<img src="images/hodafixed.png"><p class="white md-font" style="margin-top:.5em ">ERIC TODA</p>
+			    			<p class="white sm-font" style="margin-top:.5em">Head of Global Social Marketing at Air BnB. Experience in advertising and social development.</p>
 		  			</div>
 		  		</div>
 		    </div>
 			</div>
 		</section>
-	
-	</main>
+		<!-- <section id="slide-9">
+			<div class="bcg skrollable skrollable-after" data-0="background-color:rgb(63,106,165);" data-top="background-color:(0,0,0);" data-anchor-target="#slide-9" style="height:25em;background-color: rgb(0, 0, 0);">
+		  	<div class="hsContainer" style="background-color:#28b6ed">
+		  		<div class="hsContent">
+		  			<p class="md-font white" style="margin-bottom:.25em; margin-top:1em; font-size:30px;">ADVISORS</p>
+		  			<div class="col-3">			    		
+			    			<img src="images/chrisfixed2.png";>
+			    			<p class="white md-font" style="margin-top:.5em" >CHRIS REDLITZ</p></div>
+		  			<div class="col-3">			    	
+			    			<img src="images/ray2.png" style="width:94%;"> 
+			    			<p class="white md-font" style="margin-top:.5em">HERACIO HARTS</p></div>
+		  			<div class="col-3">			    		
+			    			<img src="images/hodafixed.png"><p class="white md-font" style="margin-top:.5em ">ERIC TODA</p>
+		  			</div>
+		  		</div>
+		    </div>
+			</div>
+		</section> -->
+	</main>     
 
-    <script src="js/jquery.min.js"></script>
-    
-    <script src="js/imagesloaded.js"></script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/_main.js"></script>
-
-    <script type="text/javascript" src="lib/bootstrap.js"></script>
-    
-  </body>
+ </body>
 </html>
     

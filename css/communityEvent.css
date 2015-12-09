@@ -1,4 +1,6 @@
 
+
+
 .body{
   background-color: #424141;
   width: 100%;
@@ -24,8 +26,13 @@ div.clipPicture{
     left: 95%;
 }
 
+.picGallery:hover{
+  transform: scale(1.05);
+}
+
 p{
   color: white;
+  padding: 5px;
 }
 
 .carousel-indicators li {
@@ -33,6 +40,13 @@ p{
   left: 21em;
   top: -30em;
   color: blue;
+}
+
+.backGround{
+  background-color: black;
+  opacity: .75;
+  /*background: linear-gradient(to bottom, black, white);*/
+  margin-bottom: -22px;
 }
 
 div.video img{
@@ -56,12 +70,13 @@ nav{
 }
 
 #videoP{
-    width: 13em;
+   width: 76%;
+   /* width: 10em;
     height: 7em;
     position: relative;
-    left: 13%;
-    top: 0.25em;
-/*    display: none;*/
+    left: -1em;
+    top: 0.25em;*/
+ /*   display: none;*/
 }
 
 .placeHolder{
@@ -74,7 +89,6 @@ nav{
 
 .clipVideo{
     width: 76%;
-    font-size: 4em;
     border-right-width: 28px;
     position: absolute;
     left: 20%;
@@ -191,4 +205,6 @@ img.p3{
   position: absolute;
   left: 10em;
 }
+
+
 

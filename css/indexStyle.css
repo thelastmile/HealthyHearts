@@ -22,7 +22,10 @@ div {
     font-family: SF-Compact-Text-Medium;
     font-family: SF-Compact-Text-Heavy;
 }
-
+body{
+    max-height: 6250px;
+   
+}
 
 
 /*   Fixed Header
@@ -138,6 +141,12 @@ div {
     overflow: hidden;
     position: relative;
 }
+
+.active{
+    color:  #e84748;
+    text-decoration: none;
+    transform: scale(1.5);
+}
 /*
 Header Styling nad nav bar
 */
@@ -228,6 +237,14 @@ nav a:hover{
 #slide-4 .bcg {background-image:url('../images/yogaSunset1.jpeg')
     
 }
+.stressBack{
+    height: auto;
+     background: rgba(0,0,0,.5);
+     padding: 2em;
+     border-radius: 1em;
+
+}
+
 
 .stressRow{
     position: relative;
@@ -252,6 +269,13 @@ nav a:hover{
     background-image:url('../images/newHome.jpg')
 
 }
+.strengthBack{
+    height: auto;
+     background: rgba(0,0,0,.5);
+     padding: 2em;
+     border-radius: 1em;
+
+}
 .strengthRow{
     position: relative;
     top: 20%;
@@ -263,7 +287,27 @@ nav a:hover{
 }
 
  /* Slide 7 */
-#slide-7 .bcg {background-image:url('../images/apples.jpg')}
+#slide-7 .bcg {
+    /*background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,0)), url(../images/apples.jpg) no-repeat fixed center / cover;*/
+    background-image:url('../images/apples.jpg');
+
+}
+.nutritionBack{
+    height: auto;
+     background: rgba(0,0,0,.5);
+     padding: 2em;
+     border-radius: 1em;
+
+}
+
+.nutritionRow{
+     position: relative;
+    top:60%;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
 
 .col-2{
     vertical-align: top;
@@ -285,8 +329,8 @@ nav a:hover{
 
 
 /* Slide 8 */
-#slide-8 .bcg {background-image:url('../images/bg.jpg')}
-
+/*#slide-8 .bcg {background-image:url('../images/bg.jpg')}
+*/
 .col-4{
     vertical-align: top;
     width: 30%;
@@ -311,7 +355,7 @@ nav a:hover{
  }
 
 /* Slide 9 */
-#slide-9 .bcg {background: none; background-color: #010101; height: 20em; text-align: center}
+#slide-9 .bcg {background: none; background-color: #010101; height: auto; text-align: center}
 
 #slide-9 .hsContainer {
   width: 100%;
@@ -325,29 +369,5 @@ nav a:hover{
     padding: 2em;
     margin:0;
 }
-.advisor{
-        position: relative;
-    top: -6em;
-}
-/*
-.format{
-    margin-top: 3em;
-    background-color: orangered;
-    color: white;
-    border: none;
-}
 
-.format1{
-    margin-top: 3em;
-    background-color: orangered;
-    color: white;
-    border: none;
-    position: relative;
-    left: 8em;
-}
 
-.format1:hover,.format:hover{
-    color: blue;
-    transform: scale(1.5);
-
-}*/
